@@ -1,0 +1,851 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up | Academic Planner{% endblock %}
+
+{% block extra_head %}
+<style>
+    .auth-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+        position: relative;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    /* Enhanced animated background */
+    .auth-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(255,255,255,0.08) 0%, transparent 50%),
+            linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.02) 50%, transparent 60%);
+        animation: backgroundShift 20s ease-in-out infinite;
+    }
+
+    @keyframes backgroundShift {
+        0%, 100% { transform: rotate(0deg) scale(1); }
+        25% { transform: rotate(1deg) scale(1.02); }
+        50% { transform: rotate(0deg) scale(1.01); }
+        75% { transform: rotate(-1deg) scale(1.02); }
+    }
+
+    /* Glassmorphism card with improved styling */
+    .auth-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+        border-radius: 24px;
+        box-shadow: 
+            0 25px 50px rgba(0, 0, 0, 0.1),
+            0 0 0 1px rgba(255, 255, 255, 0.2),
+            inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        width: 100%;
+        max-width: 480px;
+        padding: 3rem;
+        position: relative;
+        z-index: 1;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .auth-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 
+            0 35px 70px rgba(0, 0, 0, 0.15),
+            0 0 0 1px rgba(255, 255, 255, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+
+    /* Enhanced header with better typography */
+    .auth-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .auth-header::after {
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        border-radius: 2px;
+        opacity: 0.7;
+    }
+
+    .auth-header h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #667eea, #764ba2, #667eea);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.75rem;
+        line-height: 1.2;
+        animation: gradientShift 3s ease-in-out infinite;
+        letter-spacing: -0.02em;
+    }
+
+    @keyframes gradientShift {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+    }
+
+    .auth-header p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 0;
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+    }
+
+    .auth-header i {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-right: 0.75rem;
+        font-size: 2.2rem;
+    }
+
+    /* Enhanced form styling */
+    .form-group {
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 1.2rem 1.2rem 1.2rem 3.5rem;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: #333;
+        height: auto;
+        min-height: 60px;
+        box-sizing: border-box;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 
+            0 0 0 3px rgba(102, 126, 234, 0.2),
+            0 10px 25px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 1.2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.2rem;
+        z-index: 2;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .form-group:focus-within .input-icon {
+        color: #667eea;
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    .form-label {
+        position: absolute;
+        left: 3.5rem;
+        top: 1.2rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 0 0.75rem;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .form-control:focus + .form-label,
+    .form-control:not(:placeholder-shown) + .form-label,
+    .form-control.has-value + .form-label {
+        top: -0.75rem;
+        left: 2.75rem;
+        font-size: 0.8rem;
+        color: #667eea;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.9);
+        transform: scale(0.95);
+    }
+
+    /* Premium button styling */
+    .btn-auth {
+        width: 100%;
+        padding: 1.25rem;
+        border-radius: 16px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: 0.02em;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: none;
+        background: linear-gradient(135deg, #10b981, #059669, #047857);
+        background-size: 200% 200%;
+        color: white;
+        margin-top: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-auth::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: all 0.6s ease;
+    }
+
+    .btn-auth:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+        background-position: 100% 0%;
+    }
+
+    .btn-auth:hover::before {
+        left: 100%;
+    }
+
+    .btn-auth:active {
+        transform: translateY(-1px);
+    }
+
+    .btn-auth i {
+        margin-right: 0.75rem;
+        font-size: 1.1rem;
+    }
+
+    /* Enhanced links section */
+    .auth-links {
+        text-align: center;
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+
+    .auth-links::before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    }
+
+    .auth-links p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .auth-links a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        position: relative;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.25rem 0.75rem;
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
+    }
+
+    .auth-links a:hover {
+        color: white;
+        background: rgba(102, 126, 234, 0.2);
+        transform: translateY(-1px);
+    }
+
+    /* Enhanced floating elements */
+    .floating-elements {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .floating-circle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(2px);
+        animation: float 8s ease-in-out infinite;
+    }
+
+    .floating-circle:nth-child(1) {
+        width: 120px;
+        height: 120px;
+        top: 15%;
+        left: 8%;
+        animation-delay: 0s;
+        background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(102,126,234,0.05));
+    }
+
+    .floating-circle:nth-child(2) {
+        width: 180px;
+        height: 180px;
+        top: 55%;
+        right: 5%;
+        animation-delay: 2s;
+        background: radial-gradient(circle, rgba(255,255,255,0.08), rgba(118,75,162,0.05));
+    }
+
+    .floating-circle:nth-child(3) {
+        width: 90px;
+        height: 90px;
+        bottom: 25%;
+        left: 15%;
+        animation-delay: 4s;
+        background: radial-gradient(circle, rgba(255,255,255,0.12), rgba(16,185,129,0.05));
+    }
+
+    .floating-circle:nth-child(4) {
+        width: 60px;
+        height: 60px;
+        top: 25%;
+        right: 25%;
+        animation-delay: 1s;
+        background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(245,158,11,0.05));
+    }
+
+    .floating-circle:nth-child(5) {
+        width: 140px;
+        height: 140px;
+        bottom: 15%;
+        right: 20%;
+        animation-delay: 3s;
+        background: radial-gradient(circle, rgba(255,255,255,0.06), rgba(239,68,68,0.05));
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px) translateX(0px) rotate(0deg);
+            opacity: 0.6;
+        }
+        25% {
+            transform: translateY(-25px) translateX(10px) rotate(90deg);
+            opacity: 0.8;
+        }
+        50% {
+            transform: translateY(-15px) translateX(-10px) rotate(180deg);
+            opacity: 0.4;
+        }
+        75% {
+            transform: translateY(-30px) translateX(5px) rotate(270deg);
+            opacity: 0.9;
+        }
+    }
+
+    /* Enhanced error styling */
+    .error-message {
+        background: rgba(239, 68, 68, 0.1);
+        backdrop-filter: blur(10px);
+        color: #fee2e2;
+        padding: 1.25rem;
+        border-radius: 16px;
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        box-shadow: 0 10px 25px rgba(239, 68, 68, 0.1);
+    }
+
+    .error-message i {
+        color: #ef4444;
+        margin-right: 0.5rem;
+    }
+
+    .error-message ul {
+        margin: 0.75rem 0 0 0;
+        padding-left: 1.5rem;
+    }
+
+    .error-message li {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    /* Enhanced password help and strength indicator */
+    .password-help {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 0.75rem;
+        padding-left: 0.25rem;
+        font-weight: 500;
+    }
+
+    .password-strength {
+        margin-top: 1rem;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        overflow: hidden;
+        backdrop-filter: blur(5px);
+    }
+
+    .password-strength-bar {
+        height: 100%;
+        width: 0%;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 3px;
+        position: relative;
+    }
+
+    .password-strength-bar::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        animation: shimmer 2s infinite;
+    }
+
+    @keyframes shimmer {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+
+    .strength-weak { 
+        background: linear-gradient(135deg, #ef4444, #dc2626); 
+        width: 25%; 
+    }
+    .strength-fair { 
+        background: linear-gradient(135deg, #f59e0b, #d97706); 
+        width: 50%; 
+    }
+    .strength-good { 
+        background: linear-gradient(135deg, #3b82f6, #2563eb); 
+        width: 75%; 
+    }
+    .strength-strong { 
+        background: linear-gradient(135deg, #10b981, #059669); 
+        width: 100%; 
+    }
+
+    /* Mobile responsiveness with enhanced styling */
+    @media (max-width: 576px) {
+        .auth-card {
+            margin: 1rem;
+            padding: 2.5rem 2rem;
+            max-width: 100%;
+        }
+        
+        .auth-header h1 {
+            font-size: 2rem;
+        }
+        
+        .form-control {
+            padding: 1rem 1rem 1rem 3rem;
+            font-size: 0.95rem;
+            min-height: 56px;
+        }
+        
+        .input-icon {
+            left: 1rem;
+        }
+        
+        .form-label {
+            left: 3rem;
+        }
+        
+        .form-control:focus + .form-label,
+        .form-control:not(:placeholder-shown) + .form-label,
+        .form-control.has-value + .form-label {
+            left: 2.25rem;
+        }
+        
+        .floating-circle {
+            display: none;
+        }
+        
+        .auth-container::before {
+            animation: none;
+        }
+    }
+
+    /* Enhanced loading state */
+    .btn-auth:disabled {
+        opacity: 0.8;
+        transform: none !important;
+        cursor: not-allowed;
+    }
+
+    .btn-auth:disabled::before {
+        animation: none;
+    }
+
+    /* Accessibility improvements */
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+
+    /* Focus improvements for accessibility */
+    .form-control:focus-visible {
+        outline: 3px solid rgba(102, 126, 234, 0.5);
+        outline-offset: 2px;
+    }
+
+    .btn-auth:focus-visible {
+        outline: 3px solid rgba(16, 185, 129, 0.5);
+        outline-offset: 2px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="floating-elements">
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+    </div>
+    
+    <div class="auth-card fade-in-up">
+        <div class="auth-header">
+            <h1><i class="fas fa-user-plus"></i>Create Account</h1>
+            <p>Join thousands of students organizing their academic life with style</p>
+        </div>
+
+        {% if form.errors %}
+            <div class="error-message">
+                <i class="fas fa-exclamation-circle"></i>
+                <strong>Please correct the following errors:</strong>
+                <ul>
+                    {% for field, errors in form.errors.items %}
+                        {% for error in errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <i class="fas fa-user input-icon"></i>
+                {{ form.username }}
+                <label class="form-label" for="{{ form.username.id_for_label }}">Username</label>
+            </div>
+
+            <div class="form-group">
+                <i class="fas fa-lock input-icon"></i>
+                {{ form.password1 }}
+                <label class="form-label" for="{{ form.password1.id_for_label }}">Password</label>
+                <div class="password-help">
+                    <small>Password must be at least 8 characters long with mixed characters</small>
+                </div>
+                <div class="password-strength">
+                    <div class="password-strength-bar" id="strength-bar"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <i class="fas fa-shield-alt input-icon"></i>
+                {{ form.password2 }}
+                <label class="form-label" for="{{ form.password2.id_for_label }}">Confirm Password</label>
+            </div>
+
+            <button type="submit" class="btn btn-auth">
+                <i class="fas fa-user-plus"></i>Create Your Account
+            </button>
+        </form>
+
+        <div class="auth-links">
+            <p>Already have an account? <a href="{% url 'login' %}">Sign in here</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Enhanced form control styling with better UX
+        const inputs = document.querySelectorAll('.form-control');
+        inputs.forEach(input => {
+            // Add placeholder attributes with better UX text
+            if (input.id.includes('username')) {
+                input.placeholder = 'Choose your unique username';
+            } else if (input.id.includes('password1')) {
+                input.placeholder = 'Create a strong password';
+            } else if (input.id.includes('password2')) {
+                input.placeholder = 'Confirm your password';
+            }
+            
+            // Function to update label state with smoother animation
+            function updateLabelState(input) {
+                if (input.value && input.value.trim() !== '') {
+                    input.classList.add('has-value');
+                } else {
+                    input.classList.remove('has-value');
+                }
+            }
+            
+            // Enhanced focus/blur effects with better visual feedback
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+                this.style.transform = 'translateY(-2px)';
+                
+                // Add ripple effect
+                const ripple = document.createElement('div');
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.background = 'rgba(102, 126, 234, 0.3)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.left = '50%';
+                ripple.style.top = '50%';
+                ripple.style.width = '20px';
+                ripple.style.height = '20px';
+                ripple.style.marginLeft = '-10px';
+                ripple.style.marginTop = '-10px';
+                
+                this.parentElement.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.classList.remove('focused');
+                this.style.transform = 'translateY(0)';
+            });
+            
+            // Enhanced input handling with debounce
+            let inputTimeout;
+            input.addEventListener('input', function() {
+                clearTimeout(inputTimeout);
+                inputTimeout = setTimeout(() => {
+                    updateLabelState(this);
+                }, 50);
+            });
+            
+            // Handle paste events with immediate update
+            input.addEventListener('paste', function() {
+                setTimeout(() => updateLabelState(this), 10);
+            });
+            
+            // Check if input has value on load
+            updateLabelState(input);
+        });
+
+        // Enhanced password strength indicator with better algorithm
+        const passwordInput = document.getElementById('{{ form.password1.id_for_label }}');
+        const strengthBar = document.getElementById('strength-bar');
+        
+        if (passwordInput && strengthBar) {
+            passwordInput.addEventListener('input', function() {
+                const password = this.value;
+                const strength = calculatePasswordStrength(password);
+                
+                strengthBar.className = 'password-strength-bar';
+                if (strength.score > 0) {
+                    if (strength.score < 2) {
+                        strengthBar.classList.add('strength-weak');
+                    } else if (strength.score < 3) {
+                        strengthBar.classList.add('strength-fair');
+                    } else if (strength.score < 4) {
+                        strengthBar.classList.add('strength-good');
+                    } else {
+                        strengthBar.classList.add('strength-strong');
+                    }
+                }
+                
+                // Update help text with strength feedback
+                const helpText = this.parentElement.querySelector('.password-help small');
+                if (helpText) {
+                    helpText.textContent = strength.message;
+                }
+            });
+        }
+
+        // Enhanced form validation with better user feedback
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                const username = document.getElementById('{{ form.username.id_for_label }}');
+                const password1 = document.getElementById('{{ form.password1.id_for_label }}');
+                const password2 = document.getElementById('{{ form.password2.id_for_label }}');
+                
+                let isValid = true;
+                const errors = [];
+                
+                // Enhanced validation with better error messages
+                if (!username || !username.value.trim()) {
+                    errors.push('Username is required');
+                    if (username) {
+                        username.style.borderColor = '#ef4444';
+                        username.focus();
+                    }
+                    isValid = false;
+                } else if (username.value.trim().length < 3) {
+                    errors.push('Username must be at least 3 characters long');
+                    username.style.borderColor = '#ef4444';
+                    username.focus();
+                    isValid = false;
+                }
+                
+                if (!password1 || !password1.value.trim()) {
+                    errors.push('Password is required');
+                    if (password1) {
+                        password1.style.borderColor = '#ef4444';
+                        if (isValid) password1.focus();
+                    }
+                    isValid = false;
+                } else if (password1.value.length < 8) {
+                    errors.push('Password must be at least 8 characters long');
+                    password1.style.borderColor = '#ef4444';
+                    if (isValid) password1.focus();
+                    isValid = false;
+                }
+                
+                if (password1 && password2 && password1.value !== password2.value) {
+                    errors.push('Passwords do not match');
+                    password2.style.borderColor = '#ef4444';
+                    if (isValid) password2.focus();
+                    isValid = false;
+                }
+                
+                if (!isValid) {
+                    e.preventDefault();
+                    showToast(errors.join(', '), 'warning');
+                    return;
+                }
+                
+                // Enhanced loading state with better animation
+                const submitBtn = form.querySelector('.btn-auth');
+                if (submitBtn) {
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>Creating Your Account...';
+                    submitBtn.disabled = true;
+                    submitBtn.style.background = 'linear-gradient(135deg, #6b7280, #9ca3af)';
+                }
+            });
+        }
+
+        // Enhanced password strength calculation
+        function calculatePasswordStrength(password) {
+            let score = 0;
+            let message = 'Password must be at least 8 characters long';
+            
+            if (password.length === 0) {
+                return { score: 0, message: 'Enter your password' };
+            }
+            
+            if (password.length >= 8) {
+                score++;
+                message = 'Weak - Add uppercase, numbers, and symbols';
+            }
+            
+            if (/[a-z]/.test(password) && /[A-Z]/.test(password)) {
+                score++;
+                message = 'Fair - Add numbers and special characters';
+            }
+            
+            if (/[0-9]/.test(password)) {
+                score++;
+                message = 'Good - Add special characters for better security';
+            }
+            
+            if (/[^A-Za-z0-9]/.test(password)) {
+                score++;
+                if (password.length >= 12) {
+                    score++;
+                    message = 'Excellent - Your password is very strong!';
+                } else {
+                    message = 'Strong - Consider making it longer';
+                }
+            }
+            
+            return { score: score, message: message };
+        }
+
+        // Add CSS for ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Enhanced auto-focus with smoother animation
+        const firstInput = document.querySelector('.form-control');
+        if (firstInput) {
+            setTimeout(() => {
+                firstInput.focus();
+                firstInput.style.transform = 'translateY(-2px)';
+                setTimeout(() => {
+                    firstInput.style.transform = 'translateY(0)';
+                }, 200);
+            }, 300);
+        }
+
+        // Add smooth transitions for form elements
+        inputs.forEach((input, index) => {
+            input.style.opacity = '0';
+            input.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                input.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                input.style.opacity = '1';
+                input.style.transform = 'translateY(0)';
+            }, index * 100 + 200);
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,1419 @@
+INFO 2025-09-15 22:16:12,776 autoreload 94958 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:16:31,694 autoreload 94958 8401805504 /Users/sauravkumar/academic_planner_project/academic_app/models.py changed, reloading.
+INFO 2025-09-15 22:16:32,021 autoreload 94977 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:16:42,627 autoreload 95025 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:17:00,163 basehttp 94977 6129348608 "GET / HTTP/1.1" 200 37014
+WARNING 2025-09-15 22:17:11,998 log 94977 6163001344 Not Found: /apple-touch-icon.png
+WARNING 2025-09-15 22:17:11,999 log 94977 6146174976 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-15 22:17:11,999 basehttp 94977 6163001344 "GET /apple-touch-icon.png HTTP/1.1" 404 3732
+WARNING 2025-09-15 22:17:12,000 log 94977 6179827712 Not Found: /favicon.ico
+WARNING 2025-09-15 22:17:12,001 basehttp 94977 6146174976 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3768
+WARNING 2025-09-15 22:17:12,001 basehttp 94977 6179827712 "GET /favicon.ico HTTP/1.1" 404 3705
+INFO 2025-09-15 22:17:29,622 autoreload 95202 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:17:47,471 basehttp 94977 6129348608 "POST /assignment/1/toggle/ HTTP/1.1" 200 71
+INFO 2025-09-15 22:17:48,518 basehttp 94977 6129348608 "GET / HTTP/1.1" 200 36024
+INFO 2025-09-15 22:18:04,234 basehttp 94977 6129348608 "GET /agent/chat/ HTTP/1.1" 200 17211
+INFO 2025-09-15 22:18:18,427 basehttp 94977 6129348608 "POST /agent/chat/api/ HTTP/1.1" 200 170
+INFO 2025-09-15 22:36:18,619 basehttp 94977 6129348608 "POST /agent/chat/api/ HTTP/1.1" 200 396
+INFO 2025-09-15 22:37:39,355 autoreload 94977 8401805504 /Users/sauravkumar/academic_planner_project/gemini_agent_app/tools.py changed, reloading.
+INFO 2025-09-15 22:37:41,719 autoreload 95387 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:37:46,247 autoreload 95387 8401805504 /Users/sauravkumar/academic_planner_project/gemini_agent_app/tools.py changed, reloading.
+INFO 2025-09-15 22:37:46,504 autoreload 95390 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:37:54,993 autoreload 95390 8401805504 /Users/sauravkumar/academic_planner_project/gemini_agent_app/tools.py changed, reloading.
+INFO 2025-09-15 22:37:55,212 autoreload 95394 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:38:11,896 autoreload 95394 8401805504 /Users/sauravkumar/academic_planner_project/gemini_agent_app/tools.py changed, reloading.
+INFO 2025-09-15 22:38:12,155 autoreload 95401 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:38:16,571 autoreload 95401 8401805504 /Users/sauravkumar/academic_planner_project/gemini_agent_app/agent.py changed, reloading.
+INFO 2025-09-15 22:38:16,799 autoreload 95406 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:38:23,258 autoreload 95406 8401805504 /Users/sauravkumar/academic_planner_project/gemini_agent_app/agent.py changed, reloading.
+INFO 2025-09-15 22:38:23,500 autoreload 95425 8401805504 Watching for file changes with StatReloader
+INFO 2025-09-15 22:38:55,759 basehttp 95425 6135934976 "GET /agent/chat/ HTTP/1.1" 200 17211
+INFO 2025-09-15 22:39:08,089 basehttp 95425 6135934976 "POST /agent/chat/api/ HTTP/1.1" 200 383
+INFO 2025-09-15 22:41:08,303 basehttp 95425 6135934976 "GET /agent/chat/ HTTP/1.1" 200 27665
+INFO 2025-09-15 22:41:27,867 basehttp 95425 6135934976 "GET /agent/chat/ HTTP/1.1" 200 27665
+INFO 2025-09-15 22:41:40,358 basehttp 95425 6135934976 "POST /agent/chat/api/ HTTP/1.1" 200 441
+INFO 2025-09-15 22:46:48,311 basehttp 95425 6135934976 "GET /agent/chat/ HTTP/1.1" 200 27665
+INFO 2025-09-15 22:46:52,045 basehttp 95425 6135934976 "GET / HTTP/1.1" 200 36024
+INFO 2025-09-15 22:47:10,065 basehttp 95425 6135934976 "GET / HTTP/1.1" 200 36024
+INFO 2025-09-15 22:47:11,332 basehttp 95425 6135934976 "GET /agent/chat/ HTTP/1.1" 200 27665
+INFO 2025-09-15 22:47:13,676 basehttp 95425 6135934976 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-15 22:47:13,689 basehttp 95425 6159069184 "GET /accounts/login/ HTTP/1.1" 200 19909
+INFO 2025-09-15 22:47:13,692 basehttp 95425 6135934976 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-15 22:47:15,677 basehttp 95425 6135934976 "GET /signup/ HTTP/1.1" 200 23360
+INFO 2025-09-15 22:47:22,313 basehttp 95425 6135934976 "GET /accounts/login/ HTTP/1.1" 200 19909
+INFO 2025-09-15 22:47:26,201 basehttp 95425 6135934976 "GET /signup/ HTTP/1.1" 200 23360
+INFO 2025-09-15 22:56:12,388 basehttp 95425 6159069184 - Broken pipe from ('127.0.0.1', 64014)
+INFO 2025-09-15 22:56:12,389 basehttp 95425 6135934976 - Broken pipe from ('127.0.0.1', 64012)
+INFO 2025-09-15 23:00:17,480 basehttp 95425 6135934976 "GET /signup/ HTTP/1.1" 200 27220
+INFO 2025-09-15 23:00:24,510 basehttp 95425 6135934976 "GET /accounts/login/ HTTP/1.1" 200 23383
+INFO 2025-09-15 23:00:29,257 basehttp 95425 6135934976 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-09-15 23:00:29,274 basehttp 95425 6135934976 "GET / HTTP/1.1" 200 36024
+INFO 2025-09-15 23:05:55,416 basehttp 95425 6135934976 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-15 23:05:55,425 basehttp 95425 6135934976 "GET /accounts/login/ HTTP/1.1" 200 23383
+INFO 2025-09-15 23:05:57,953 basehttp 95425 6135934976 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-09-15 23:05:57,972 basehttp 95425 6135934976 "GET / HTTP/1.1" 200 36024
+INFO 2025-09-15 23:06:00,561 basehttp 95425 6135934976 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-15 23:06:00,571 basehttp 95425 6135934976 "GET /accounts/login/ HTTP/1.1" 200 23383
+INFO 2025-09-15 23:08:25,488 basehttp 95425 6135934976 "GET /accounts/login/ HTTP/1.1" 200 24086
+INFO 2025-09-15 23:08:37,228 basehttp 95425 6135934976 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-09-15 23:08:37,247 basehttp 95425 6135934976 "GET / HTTP/1.1" 200 36024
+INFO 2025-09-15 23:08:40,814 basehttp 95425 6135934976 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-15 23:08:40,822 basehttp 95425 6135934976 "GET /accounts/login/ HTTP/1.1" 200 24086
+INFO 2025-09-15 23:08:42,402 basehttp 95425 6135934976 "GET /signup/ HTTP/1.1" 200 27923
+INFO 2025-09-15 23:12:34,544 basehttp 95425 6135934976 - Broken pipe from ('127.0.0.1', 64229)
+INFO 2025-09-16 06:27:23,005 autoreload 1546 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 06:27:24,884 basehttp 1546 6199472128 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 06:27:24,895 basehttp 1546 6199472128 "GET /accounts/login/?next=/ HTTP/1.1" 200 24086
+INFO 2025-09-16 06:27:28,481 basehttp 1546 6199472128 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 06:27:28,503 basehttp 1546 6199472128 "GET / HTTP/1.1" 200 36024
+WARNING 2025-09-16 06:27:29,616 log 1546 6233124864 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 06:27:29,616 log 1546 6249951232 Not Found: /favicon.ico
+WARNING 2025-09-16 06:27:29,617 log 1546 6216298496 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 06:27:29,617 basehttp 1546 6233124864 "GET /apple-touch-icon.png HTTP/1.1" 404 3732
+WARNING 2025-09-16 06:27:29,618 basehttp 1546 6249951232 "GET /favicon.ico HTTP/1.1" 404 3705
+WARNING 2025-09-16 06:27:29,618 basehttp 1546 6216298496 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3768
+INFO 2025-09-16 06:27:42,712 basehttp 1546 6199472128 "GET /agent/chat/ HTTP/1.1" 200 27665
+INFO 2025-09-16 06:27:50,335 basehttp 1546 6199472128 "GET / HTTP/1.1" 200 36024
+INFO 2025-09-16 06:28:23,152 basehttp 1546 6199472128 "POST / HTTP/1.1" 200 36024
+INFO 2025-09-16 06:28:45,688 basehttp 1546 6199472128 "POST / HTTP/1.1" 200 36024
+INFO 2025-09-16 07:49:17,765 basehttp 1546 6199472128 "POST / HTTP/1.1" 200 36024
+WARNING 2025-09-16 07:49:17,811 log 1546 6216298496 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 07:49:17,812 log 1546 6249951232 Not Found: /favicon.ico
+WARNING 2025-09-16 07:49:17,813 log 1546 6233124864 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 07:49:17,813 basehttp 1546 6216298496 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3768
+WARNING 2025-09-16 07:49:17,813 basehttp 1546 6249951232 "GET /favicon.ico HTTP/1.1" 404 3705
+WARNING 2025-09-16 07:49:17,813 basehttp 1546 6233124864 "GET /apple-touch-icon.png HTTP/1.1" 404 3732
+INFO 2025-09-16 07:49:26,881 basehttp 1546 6199472128 "POST / HTTP/1.1" 200 36024
+INFO 2025-09-16 07:49:40,042 basehttp 1546 6199472128 "POST / HTTP/1.1" 200 36024
+INFO 2025-09-16 07:59:36,743 autoreload 1546 8736825536 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 07:59:37,048 autoreload 2360 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 08:06:52,969 autoreload 2872 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 08:07:05,186 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 45622
+INFO 2025-09-16 08:07:05,213 basehttp 2360 6138146816 "GET /static/css/debug.css HTTP/1.1" 200 2105
+INFO 2025-09-16 08:07:05,944 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:07:26,105 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 45622
+INFO 2025-09-16 08:07:26,142 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:08:33,555 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:12:27,941 autoreload 2936 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 08:12:32,807 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:12:34,585 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 51794
+INFO 2025-09-16 08:12:34,605 basehttp 2360 6138146816 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 08:12:36,302 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:12:50,400 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 51794
+INFO 2025-09-16 08:12:50,430 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:13:17,336 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 51794
+INFO 2025-09-16 08:13:17,373 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:13:46,205 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 51794
+INFO 2025-09-16 08:13:46,242 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:13:56,625 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:13:57,857 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:14:36,836 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:15:10,114 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 51794
+INFO 2025-09-16 08:15:10,153 basehttp 2360 6138146816 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 08:15:10,226 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:15:53,260 autoreload 2999 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 08:16:11,362 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:16:22,454 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 08:16:29,409 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 51794
+INFO 2025-09-16 08:16:29,499 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 09:57:45,109 autoreload 3738 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 09:59:25,369 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 09:59:27,721 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 60617
+INFO 2025-09-16 09:59:27,740 basehttp 2360 6138146816 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 09:59:34,002 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+WARNING 2025-09-16 09:59:34,100 log 2360 6154973184 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 09:59:34,101 log 2360 6188625920 Not Found: /favicon.ico
+WARNING 2025-09-16 09:59:34,101 log 2360 6171799552 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 09:59:34,102 basehttp 2360 6188625920 "GET /favicon.ico HTTP/1.1" 404 3705
+WARNING 2025-09-16 09:59:34,102 basehttp 2360 6154973184 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3768
+WARNING 2025-09-16 09:59:34,102 basehttp 2360 6171799552 "GET /apple-touch-icon.png HTTP/1.1" 404 3732
+INFO 2025-09-16 09:59:51,745 basehttp 2360 6138146816 "POST / HTTP/1.1" 200 60617
+INFO 2025-09-16 09:59:51,791 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:00:15,955 basehttp 2360 6138146816 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:00:22,648 autoreload 2360 8736825536 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 10:00:23,017 autoreload 3877 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 10:00:43,065 autoreload 3877 8736825536 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 10:00:43,293 autoreload 3902 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 10:01:15,819 autoreload 3918 8736825536 Watching for file changes with StatReloader
+INFO 2025-09-16 10:02:34,461 autoreload 1154 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 10:02:38,602 basehttp 1154 6201077760 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 10:02:38,757 basehttp 1154 6201077760 "GET /accounts/login/?next=/ HTTP/1.1" 200 28521
+INFO 2025-09-16 10:02:42,930 basehttp 1154 6217904128 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 10:02:42,949 basehttp 1154 6217904128 "GET / HTTP/1.1" 200 60617
+INFO 2025-09-16 10:02:43,002 basehttp 1154 6217904128 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:02:56,212 basehttp 1154 6217904128 "POST / HTTP/1.1" 200 60617
+INFO 2025-09-16 10:02:56,245 basehttp 1154 6217904128 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:11:28,900 basehttp 1154 6201077760 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:11:37,708 basehttp 1154 6201077760 "GET /agent/chat/ HTTP/1.1" 200 32577
+INFO 2025-09-16 10:11:37,730 basehttp 1154 6201077760 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 10:15:59,933 basehttp 1154 6201077760 "GET /agent/chat/ HTTP/1.1" 200 32577
+INFO 2025-09-16 10:16:01,385 basehttp 1154 6201077760 "GET / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:16:01,443 basehttp 1154 6201077760 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:16:12,750 basehttp 1154 6201077760 "POST / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:16:12,792 basehttp 1154 6201077760 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:20:14,700 autoreload 1892 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 10:20:17,104 basehttp 1892 6198407168 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:20:18,042 basehttp 1892 6198407168 "POST / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:20:22,898 basehttp 1892 6198407168 "GET / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:20:22,980 basehttp 1892 6198407168 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:20:35,022 basehttp 1892 6198407168 "POST / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:20:35,065 basehttp 1892 6198407168 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:26:16,797 autoreload 2080 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 10:26:19,576 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:26:20,522 basehttp 2080 6122041344 "POST / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:26:20,548 basehttp 2080 6122041344 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 10:26:30,105 basehttp 2080 6122041344 "GET / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:26:30,126 basehttp 2080 6122041344 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 10:26:30,157 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:26:45,273 basehttp 2080 6122041344 "POST / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:26:45,318 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 10:26:58,784 basehttp 2080 6122041344 "POST / HTTP/1.1" 200 60571
+INFO 2025-09-16 10:26:58,826 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 13:24:06,717 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:19:11,943 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:19:15,472 basehttp 2080 6122041344 "GET /agent/chat/ HTTP/1.1" 200 32577
+INFO 2025-09-16 16:19:15,490 basehttp 2080 6122041344 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 16:20:06,262 basehttp 2080 6122041344 "POST /agent/chat/api/ HTTP/1.1" 200 39
+INFO 2025-09-16 16:20:20,538 basehttp 2080 6122041344 "POST /agent/chat/api/ HTTP/1.1" 200 438
+INFO 2025-09-16 16:20:37,805 basehttp 2080 6122041344 "POST /agent/chat/api/ HTTP/1.1" 200 129
+INFO 2025-09-16 16:20:48,761 basehttp 2080 6122041344 "POST /agent/chat/api/ HTTP/1.1" 200 112
+INFO 2025-09-16 16:20:51,799 basehttp 2080 6122041344 "GET /agent/chat/ HTTP/1.1" 200 32577
+INFO 2025-09-16 16:20:52,898 basehttp 2080 6122041344 "GET / HTTP/1.1" 200 61104
+INFO 2025-09-16 16:20:52,943 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+WARNING 2025-09-16 16:20:53,040 log 2080 6162001920 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 16:20:53,041 log 2080 6178828288 Not Found: /favicon.ico
+WARNING 2025-09-16 16:20:53,042 log 2080 6145175552 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 16:20:53,042 basehttp 2080 6162001920 "GET /apple-touch-icon.png HTTP/1.1" 404 3911
+WARNING 2025-09-16 16:20:53,042 basehttp 2080 6178828288 "GET /favicon.ico HTTP/1.1" 404 3884
+WARNING 2025-09-16 16:20:53,042 basehttp 2080 6145175552 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3947
+INFO 2025-09-16 16:21:22,430 basehttp 2080 6122041344 "POST / HTTP/1.1" 200 61104
+INFO 2025-09-16 16:21:22,477 basehttp 2080 6122041344 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:23:41,075 autoreload 2588 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 16:23:43,454 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:23:44,052 basehttp 2588 6170587136 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:23:49,711 basehttp 2588 6170587136 "GET / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:23:55,425 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:23:55,488 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:23:58,051 basehttp 2588 6170587136 "GET / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:23:58,098 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:23:58,713 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:24:21,278 basehttp 2588 6170587136 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:24:21,307 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:25:54,366 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:25:55,432 basehttp 2588 6170587136 "GET / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:25:55,478 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:26:06,931 basehttp 2588 6170587136 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:26:06,975 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:26:28,323 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:26:30,280 basehttp 2588 6170587136 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:26:30,377 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:26:41,562 basehttp 2588 6170587136 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:26:41,604 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:26:59,174 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:27:01,336 basehttp 2588 6170587136 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:27:01,410 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:27:13,837 basehttp 2588 6170587136 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:28:04,148 autoreload 2634 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 16:28:06,950 basehttp 2634 6191558656 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:28:08,672 basehttp 2634 6191558656 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:28:08,737 basehttp 2634 6191558656 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:28:26,143 basehttp 2634 6191558656 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:28:28,013 basehttp 2634 6191558656 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:28:28,092 basehttp 2634 6191558656 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:37:23,074 autoreload 3219 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 16:37:26,313 basehttp 3219 6161231872 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:37:27,351 basehttp 3219 6161231872 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:37:32,093 basehttp 3219 6161231872 "GET / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:37:32,138 basehttp 3219 6161231872 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:37:47,996 basehttp 3219 6161231872 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:37:48,040 basehttp 3219 6161231872 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:45:19,302 basehttp 3219 6161231872 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:51:09,568 autoreload 3347 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 16:51:12,943 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:51:13,747 basehttp 3347 6124318720 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:51:16,835 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:51:30,447 basehttp 3347 6124318720 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:51:30,481 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:51:43,041 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:06,594 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:08,532 basehttp 3347 6124318720 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:52:08,650 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:12,181 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:28,236 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:30,211 basehttp 3347 6124318720 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:52:30,276 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:40,251 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:42,880 basehttp 3347 6124318720 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:52:42,950 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:47,794 basehttp 3347 6124318720 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:52:47,862 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:52:57,999 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:53:00,032 basehttp 3347 6124318720 "POST / HTTP/1.1" 200 55235
+INFO 2025-09-16 16:53:00,097 basehttp 3347 6124318720 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 16:53:32,041 autoreload 3384 8434819264 Watching for file changes with StatReloader
+INFO 2025-09-16 16:53:35,544 basehttp 3384 6196097024 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:53:35,549 basehttp 3384 6196097024 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+WARNING 2025-09-16 16:53:35,570 log 3384 6196097024 Not Found: /favicon.ico
+WARNING 2025-09-16 16:53:35,570 basehttp 3384 6196097024 "GET /favicon.ico HTTP/1.1" 404 3884
+INFO 2025-09-16 16:53:39,980 basehttp 3384 6196097024 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:53:40,575 basehttp 3384 6196097024 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:53:40,776 basehttp 3384 6196097024 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:53:41,030 basehttp 3384 6196097024 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:53:41,244 basehttp 3384 6196097024 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:53:52,499 basehttp 3384 6196097024 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:53:52,504 basehttp 3384 6196097024 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:54:05,216 basehttp 3384 6229749760 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:05,227 basehttp 3384 6229749760 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:54:11,380 basehttp 3384 6229749760 "GET /agent/chat/ HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:11,387 basehttp 3384 6229749760 "GET /accounts/login/?next=/agent/chat/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:54:11,893 basehttp 3384 6229749760 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:11,908 basehttp 3384 6229749760 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:54:22,702 basehttp 3384 6229749760 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:22,710 basehttp 3384 6229749760 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:54:22,978 basehttp 3384 6229749760 "GET /agent/chat/ HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:22,986 basehttp 3384 6229749760 "GET /accounts/login/?next=/agent/chat/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:54:23,900 basehttp 3384 6229749760 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-09-16 16:54:23,919 basehttp 3384 6229749760 "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+INFO 2025-09-16 16:54:23,924 basehttp 3384 6263402496 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-09-16 16:54:23,925 basehttp 3384 6280228864 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2025-09-16 16:54:23,925 basehttp 3384 6297055232 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-09-16 16:54:23,926 basehttp 3384 6246576128 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2025-09-16 16:54:23,926 basehttp 3384 6229749760 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+INFO 2025-09-16 16:54:23,926 basehttp 3384 6313881600 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-09-16 16:54:25,509 basehttp 3384 6297055232 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-09-16 16:54:26,561 basehttp 3384 6313881600 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:26,573 basehttp 3384 6280228864 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4196
+INFO 2025-09-16 16:54:29,095 basehttp 3384 6263402496 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4358
+INFO 2025-09-16 16:54:33,815 basehttp 3384 6229749760 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:33,825 basehttp 3384 6313881600 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:54:40,556 basehttp 3384 6297055232 "GET /agent/chat/ HTTP/1.1" 302 0
+INFO 2025-09-16 16:54:40,565 basehttp 3384 6246576128 "GET /accounts/login/?next=/agent/chat/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:58:36,380 autoreload 1413 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 16:58:37,874 basehttp 1413 6155563008 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:58:37,885 basehttp 1413 6155563008 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:58:44,322 basehttp 1413 6155563008 "GET /accounts/login/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:59:37,645 autoreload 1413 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/urls.py changed, reloading.
+INFO 2025-09-16 16:59:37,966 autoreload 1709 8564154560 Watching for file changes with StatReloader
+WARNING 2025-09-16 16:59:39,154 log 1709 6129774592 Not Found: /accounts/login/
+WARNING 2025-09-16 16:59:39,154 basehttp 1709 6129774592 "GET /accounts/login/ HTTP/1.1" 404 3787
+INFO 2025-09-16 16:59:45,634 autoreload 1709 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/urls.py changed, reloading.
+INFO 2025-09-16 16:59:45,963 autoreload 1733 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 16:59:48,194 basehttp 1733 6158757888 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:59:48,209 basehttp 1733 6158757888 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:59:52,562 basehttp 1733 6158757888 "GET /agent/chat/ HTTP/1.1" 302 0
+INFO 2025-09-16 16:59:52,570 basehttp 1733 6158757888 "GET /accounts/login/?next=/agent/chat/ HTTP/1.1" 200 0
+INFO 2025-09-16 16:59:53,097 basehttp 1733 6158757888 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 16:59:53,106 basehttp 1733 6158757888 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+WARNING 2025-09-16 16:59:58,188 log 1733 6209236992 Not Found: /favicon.ico
+WARNING 2025-09-16 16:59:58,189 log 1733 6192410624 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 16:59:58,190 log 1733 6175584256 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 16:59:58,190 basehttp 1733 6209236992 "GET /favicon.ico HTTP/1.1" 404 3884
+WARNING 2025-09-16 16:59:58,190 basehttp 1733 6175584256 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3947
+WARNING 2025-09-16 16:59:58,190 basehttp 1733 6192410624 "GET /apple-touch-icon.png HTTP/1.1" 404 3911
+WARNING 2025-09-16 17:03:03,925 log 1733 6175584256 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 17:03:03,926 basehttp 1733 6175584256 "GET /apple-touch-icon.png HTTP/1.1" 404 3911
+WARNING 2025-09-16 17:03:03,927 log 1733 6192410624 Not Found: /favicon.ico
+WARNING 2025-09-16 17:03:03,929 log 1733 6158757888 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 17:03:03,929 basehttp 1733 6192410624 "GET /favicon.ico HTTP/1.1" 404 3884
+WARNING 2025-09-16 17:03:03,929 basehttp 1733 6158757888 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3947
+INFO 2025-09-16 17:04:26,374 basehttp 1733 6158757888 "GET /accounts/login/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:04:26,418 basehttp 1733 6158757888 "GET /accounts/login/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:04:28,913 basehttp 1733 6158757888 "GET /accounts/login/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:04:32,128 basehttp 1733 6158757888 "GET /accounts/login/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:08:26,230 autoreload 1733 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/settings.py changed, reloading.
+INFO 2025-09-16 17:08:26,534 autoreload 2029 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:08:29,911 basehttp 2029 6203666432 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 17:08:29,917 basehttp 2029 6203666432 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:08:32,287 basehttp 2029 6203666432 "GET /accounts/login/?next=/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:08:35,917 basehttp 2029 6203666432 "GET /accounts/login/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:08:36,323 basehttp 2029 6203666432 "GET /accounts/login HTTP/1.1" 301 0
+INFO 2025-09-16 17:08:36,328 basehttp 2029 6203666432 "GET /accounts/login/ HTTP/1.1" 200 0
+INFO 2025-09-16 17:11:36,123 autoreload 2082 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:11:37,483 basehttp 2082 6189051904 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 17:11:37,498 basehttp 2082 6189051904 "GET /accounts/login/?next=/ HTTP/1.1" 200 28520
+INFO 2025-09-16 17:11:37,643 basehttp 2082 6189051904 "GET /static/css/debug.css HTTP/1.1" 200 2105
+INFO 2025-09-16 17:11:40,043 basehttp 2082 6189051904 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 17:11:40,065 basehttp 2082 6189051904 "GET / HTTP/1.1" 200 55234
+INFO 2025-09-16 17:11:40,131 basehttp 2082 6189051904 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 17:11:55,926 basehttp 2082 6189051904 "POST / HTTP/1.1" 200 55234
+INFO 2025-09-16 17:11:55,964 basehttp 2082 6189051904 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 17:12:39,424 basehttp 2082 6189051904 "GET /calendar-data/ HTTP/1.1" 200 232
+INFO 2025-09-16 17:12:41,411 basehttp 2082 6189051904 "POST / HTTP/1.1" 200 40588
+INFO 2025-09-16 17:12:41,431 basehttp 2082 6189051904 "GET /static/css/dashboard.css HTTP/1.1" 200 10218
+INFO 2025-09-16 17:12:52,216 basehttp 2082 6189051904 "GET /calendar-data/ HTTP/1.1" 200 232
+ERROR 2025-09-16 17:13:09,186 log 2082 6189051904 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 91, in dashboard
+    assignment_form = AssignmentForm(request.POST, user=request.user, prefix="assignment")
+TypeError: __init__() got multiple values for argument 'user'
+ERROR 2025-09-16 17:13:09,189 basehttp 2082 6189051904 "POST / HTTP/1.1" 500 74915
+INFO 2025-09-16 17:13:42,379 basehttp 2082 6189051904 "GET /accounts/login/ HTTP/1.1" 200 14950
+INFO 2025-09-16 17:13:46,265 basehttp 2082 6189051904 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-09-16 17:13:46,284 basehttp 2082 6189051904 "GET / HTTP/1.1" 200 26143
+INFO 2025-09-16 17:13:46,304 basehttp 2082 6189051904 "GET /static/js/dashboard.js HTTP/1.1" 200 23066
+WARNING 2025-09-16 17:13:46,385 log 2082 6189051904 Not Found: /api/stats/
+WARNING 2025-09-16 17:13:46,385 basehttp 2082 6189051904 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 17:14:03,571 autoreload 2147 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:14:04,911 basehttp 2147 6121926656 "GET / HTTP/1.1" 200 26143
+WARNING 2025-09-16 17:14:05,014 log 2147 6121926656 Not Found: /api/stats/
+WARNING 2025-09-16 17:14:05,014 basehttp 2147 6121926656 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 17:14:32,223 basehttp 2147 6121926656 "POST / HTTP/1.1" 200 26143
+INFO 2025-09-16 17:14:32,228 basehttp 2147 6121926656 - Broken pipe from ('127.0.0.1', 49451)
+INFO 2025-09-16 17:14:32,230 basehttp 2147 6138753024 "POST / HTTP/1.1" 200 26143
+WARNING 2025-09-16 17:14:32,294 log 2147 6138753024 Not Found: /api/stats/
+WARNING 2025-09-16 17:14:32,294 basehttp 2147 6138753024 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 17:15:18,274 autoreload 2147 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:15:18,583 autoreload 2172 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:15:32,813 autoreload 2182 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:16:25,435 autoreload 2182 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 17:16:25,636 autoreload 2214 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:17:12,303 autoreload 2232 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:17:29,897 autoreload 2232 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:17:30,077 autoreload 2243 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:17:48,738 autoreload 2243 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:17:48,930 autoreload 2251 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:17:57,011 autoreload 2260 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:18:36,223 autoreload 2260 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:18:36,509 autoreload 2279 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:19:19,821 autoreload 2279 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 17:19:20,012 autoreload 2295 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:19:25,273 autoreload 2295 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 17:19:25,491 autoreload 2298 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:19:27,695 autoreload 2298 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 17:19:27,885 autoreload 2302 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:19:56,826 autoreload 2302 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 17:19:57,019 autoreload 2315 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:20:00,179 basehttp 2315 6132789248 "POST / HTTP/1.1" 200 26143
+INFO 2025-09-16 17:20:00,196 basehttp 2315 6132789248 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-09-16 17:20:00,196 basehttp 2315 6149615616 "GET /static/js/dashboard.js HTTP/1.1" 304 0
+INFO 2025-09-16 17:20:09,907 basehttp 2315 6166441984 "GET /accounts/login/?next=/ HTTP/1.1" 200 13925
+INFO 2025-09-16 17:20:09,938 basehttp 2315 6166441984 "GET /static/css/dashboard.css HTTP/1.1" 200 10218
+WARNING 2025-09-16 17:20:10,933 log 2315 6166441984 Not Found: /favicon.ico
+WARNING 2025-09-16 17:20:10,933 basehttp 2315 6166441984 "GET /favicon.ico HTTP/1.1" 404 3884
+INFO 2025-09-16 17:20:16,473 basehttp 2315 6166441984 "GET /accounts/login/?next=/ HTTP/1.1" 200 13925
+INFO 2025-09-16 17:20:26,072 basehttp 2315 6166441984 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 17:20:26,085 basehttp 2315 6166441984 "GET / HTTP/1.1" 200 26143
+INFO 2025-09-16 17:20:26,105 basehttp 2315 6166441984 "GET /static/js/dashboard.js HTTP/1.1" 200 23066
+WARNING 2025-09-16 17:20:26,321 log 2315 6166441984 Not Found: /api/stats/
+WARNING 2025-09-16 17:20:26,321 basehttp 2315 6166441984 "GET /api/stats/ HTTP/1.1" 404 3881
+ERROR 2025-09-16 17:20:42,228 log 2315 6166441984 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 91, in dashboard
+    assignment_form = AssignmentForm(request.POST, user=request.user, prefix="assignment")
+TypeError: __init__() got multiple values for argument 'user'
+ERROR 2025-09-16 17:20:42,230 basehttp 2315 6166441984 "POST / HTTP/1.1" 500 75672
+INFO 2025-09-16 17:21:54,226 autoreload 2315 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:21:54,452 autoreload 2367 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:21:55,828 autoreload 2367 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:21:56,059 autoreload 2373 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:22:02,530 basehttp 2373 6196080640 "POST / HTTP/1.1" 200 25609
+WARNING 2025-09-16 17:22:02,657 log 2373 6196080640 Not Found: /api/stats/
+WARNING 2025-09-16 17:22:02,657 basehttp 2373 6196080640 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 17:22:16,512 basehttp 2373 6196080640 "POST / HTTP/1.1" 200 25609
+INFO 2025-09-16 17:22:16,514 basehttp 2373 6212907008 "POST / HTTP/1.1" 200 25609
+WARNING 2025-09-16 17:22:16,606 log 2373 6212907008 Not Found: /api/stats/
+WARNING 2025-09-16 17:22:16,607 basehttp 2373 6212907008 "GET /api/stats/ HTTP/1.1" 404 3881
+WARNING 2025-09-16 17:22:20,622 log 2373 6212907008 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-09-16 17:22:20,622 basehttp 2373 6212907008 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3995
+INFO 2025-09-16 17:23:19,078 autoreload 2373 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:23:19,335 autoreload 2395 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:23:22,524 autoreload 2395 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:23:22,738 autoreload 2401 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:23:24,082 autoreload 2401 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 17:23:24,286 autoreload 2402 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:23:48,366 autoreload 2402 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 17:23:48,632 autoreload 2410 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:25:14,386 autoreload 2436 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:25:31,949 autoreload 2436 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/urls.py changed, reloading.
+INFO 2025-09-16 17:25:32,133 autoreload 2453 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:26:36,023 autoreload 2453 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/urls.py changed, reloading.
+INFO 2025-09-16 17:26:36,227 autoreload 2472 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:26:37,614 autoreload 2472 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/urls.py changed, reloading.
+INFO 2025-09-16 17:26:37,817 autoreload 2476 8564154560 Watching for file changes with StatReloader
+ERROR 2025-09-16 17:26:39,220 log 2476 6200455168 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 409, in dashboard
+    return render(request, 'index.html', context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2025-09-16 17:26:39,226 basehttp 2476 6200455168 "GET / HTTP/1.1" 500 184107
+WARNING 2025-09-16 17:26:39,288 log 2476 6234107904 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 17:26:39,288 log 2476 6250934272 Not Found: /favicon.ico
+WARNING 2025-09-16 17:26:39,289 basehttp 2476 6234107904 "GET /apple-touch-icon.png HTTP/1.1" 404 2824
+WARNING 2025-09-16 17:26:39,289 basehttp 2476 6250934272 "GET /favicon.ico HTTP/1.1" 404 2797
+WARNING 2025-09-16 17:26:39,289 log 2476 6217281536 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 17:26:39,289 basehttp 2476 6217281536 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2860
+ERROR 2025-09-16 17:26:42,603 log 2476 6200455168 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 409, in dashboard
+    return render(request, 'index.html', context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2025-09-16 17:26:42,603 basehttp 2476 6200455168 "GET / HTTP/1.1" 500 184107
+INFO 2025-09-16 17:26:48,573 autoreload 2476 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/urls.py changed, reloading.
+INFO 2025-09-16 17:26:48,824 autoreload 2482 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 17:26:50,578 basehttp 2482 6163361792 "GET / HTTP/1.1" 200 25609
+INFO 2025-09-16 17:26:50,589 basehttp 2482 6180188160 "GET /static/js/dashboard.js HTTP/1.1" 200 23066
+INFO 2025-09-16 17:26:50,590 basehttp 2482 6163361792 "GET /static/css/dashboard.css HTTP/1.1" 200 10218
+WARNING 2025-09-16 17:27:01,839 log 2482 6180188160 Not Found: /api/stats/
+WARNING 2025-09-16 17:27:01,839 basehttp 2482 6180188160 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 17:28:02,725 basehttp 2482 6180188160 "POST / HTTP/1.1" 200 25609
+WARNING 2025-09-16 17:28:02,791 log 2482 6180188160 Not Found: /api/stats/
+WARNING 2025-09-16 17:28:02,791 basehttp 2482 6180188160 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 17:28:15,535 basehttp 2482 6163361792 "POST / HTTP/1.1" 200 25609
+INFO 2025-09-16 17:28:15,552 basehttp 2482 6163361792 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-09-16 17:28:15,553 basehttp 2482 6197014528 "GET /static/js/dashboard.js HTTP/1.1" 304 0
+WARNING 2025-09-16 17:28:15,657 log 2482 6197014528 Not Found: /api/stats/
+WARNING 2025-09-16 17:28:15,657 basehttp 2482 6197014528 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 21:12:53,249 autoreload 3085 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:12:55,978 basehttp 3085 6190215168 "POST / HTTP/1.1" 200 25609
+INFO 2025-09-16 21:12:56,004 basehttp 3085 6190215168 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-09-16 21:12:56,005 basehttp 3085 6207041536 "GET /static/js/dashboard.js HTTP/1.1" 304 0
+WARNING 2025-09-16 21:13:06,809 log 3085 6240694272 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 21:13:06,810 log 3085 6223867904 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 21:13:06,810 log 3085 6190215168 Not Found: /api/stats/
+WARNING 2025-09-16 21:13:06,811 log 3085 6257520640 Not Found: /favicon.ico
+WARNING 2025-09-16 21:13:06,811 basehttp 3085 6240694272 "GET /apple-touch-icon.png HTTP/1.1" 404 3911
+WARNING 2025-09-16 21:13:06,811 basehttp 3085 6223867904 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3947
+WARNING 2025-09-16 21:13:06,811 basehttp 3085 6190215168 "GET /api/stats/ HTTP/1.1" 404 3881
+WARNING 2025-09-16 21:13:06,812 basehttp 3085 6257520640 "GET /favicon.ico HTTP/1.1" 404 3884
+INFO 2025-09-16 21:13:19,757 basehttp 3085 6190215168 "POST / HTTP/1.1" 200 25609
+WARNING 2025-09-16 21:13:19,831 log 3085 6190215168 Not Found: /api/stats/
+WARNING 2025-09-16 21:13:19,831 basehttp 3085 6190215168 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 21:14:00,811 basehttp 3085 6190215168 "GET /agent/chat/ HTTP/1.1" 200 17930
+INFO 2025-09-16 21:14:04,590 basehttp 3085 6190215168 "GET /agent/chat/ HTTP/1.1" 200 17930
+INFO 2025-09-16 21:14:09,172 basehttp 3085 6190215168 "GET /agent/chat/ HTTP/1.1" 200 17930
+INFO 2025-09-16 21:28:34,058 autoreload 3321 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:28:37,562 basehttp 3321 6129922048 "GET / HTTP/1.1" 200 25609
+INFO 2025-09-16 21:28:37,703 basehttp 3321 6129922048 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-09-16 21:28:37,703 basehttp 3321 6146748416 "GET /static/js/dashboard.js HTTP/1.1" 304 0
+WARNING 2025-09-16 21:28:37,791 log 3321 6129922048 Not Found: /api/stats/
+WARNING 2025-09-16 21:28:37,791 basehttp 3321 6129922048 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 21:29:19,932 basehttp 3321 6129922048 "GET /agent/chat/ HTTP/1.1" 200 17930
+INFO 2025-09-16 21:29:32,211 basehttp 3321 6129922048 "POST /agent/chat/api/ HTTP/1.1" 200 290
+INFO 2025-09-16 21:30:25,289 basehttp 3321 6129922048 "GET / HTTP/1.1" 200 25609
+WARNING 2025-09-16 21:30:25,388 log 3321 6129922048 Not Found: /api/stats/
+WARNING 2025-09-16 21:30:25,388 basehttp 3321 6129922048 "GET /api/stats/ HTTP/1.1" 404 3881
+WARNING 2025-09-16 21:30:48,567 log 3321 6129922048 Not Found: /api/stats/
+WARNING 2025-09-16 21:30:48,568 basehttp 3321 6129922048 "GET /api/stats/ HTTP/1.1" 404 3881
+INFO 2025-09-16 21:34:23,150 autoreload 3534 8564154560 Watching for file changes with StatReloader
+ERROR 2025-09-16 21:34:24,503 log 3534 6198210560 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 501, in dashboard
+    'event_form': CalendarEventForm(user=user),
+TypeError: __init__() got an unexpected keyword argument 'user'
+ERROR 2025-09-16 21:34:24,505 basehttp 3534 6198210560 "GET / HTTP/1.1" 500 72111
+ERROR 2025-09-16 21:34:27,500 log 3534 6198210560 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 501, in dashboard
+    'event_form': CalendarEventForm(user=user),
+TypeError: __init__() got an unexpected keyword argument 'user'
+ERROR 2025-09-16 21:34:27,501 basehttp 3534 6198210560 "GET / HTTP/1.1" 500 72111
+INFO 2025-09-16 21:35:27,553 autoreload 3534 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/forms.py changed, reloading.
+INFO 2025-09-16 21:35:27,792 autoreload 3548 8564154560 Watching for file changes with StatReloader
+ERROR 2025-09-16 21:35:29,276 log 3548 6134181888 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 501, in dashboard
+    'event_form': CalendarEventForm(user=user),
+TypeError: __init__() got an unexpected keyword argument 'user'
+ERROR 2025-09-16 21:35:29,277 basehttp 3548 6134181888 "GET / HTTP/1.1" 500 72111
+ERROR 2025-09-16 21:35:31,679 log 3548 6134181888 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 501, in dashboard
+    'event_form': CalendarEventForm(user=user),
+TypeError: __init__() got an unexpected keyword argument 'user'
+ERROR 2025-09-16 21:35:31,679 basehttp 3548 6134181888 "GET / HTTP/1.1" 500 72111
+INFO 2025-09-16 21:36:47,630 autoreload 3548 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/forms.py changed, reloading.
+INFO 2025-09-16 21:36:47,858 autoreload 3554 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:36:54,877 basehttp 3554 6155677696 "GET / HTTP/1.1" 200 37815
+INFO 2025-09-16 21:36:54,889 basehttp 3554 6155677696 "GET /static/css/dashboard.css HTTP/1.1" 200 10218
+WARNING 2025-09-16 21:37:05,637 log 3554 6155677696 Not Found: /calendar/data/
+WARNING 2025-09-16 21:37:05,638 basehttp 3554 6155677696 "GET /calendar/data/ HTTP/1.1" 404 3893
+INFO 2025-09-16 21:37:11,163 basehttp 3554 6172504064 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 21:37:11,172 basehttp 3554 6172504064 "GET /accounts/login/?next=/ HTTP/1.1" 200 13925
+INFO 2025-09-16 21:37:11,326 basehttp 3554 6172504064 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+WARNING 2025-09-16 21:37:11,355 log 3554 6172504064 Not Found: /favicon.ico
+WARNING 2025-09-16 21:37:11,355 basehttp 3554 6172504064 "GET /favicon.ico HTTP/1.1" 404 3884
+INFO 2025-09-16 21:37:23,387 basehttp 3554 6172504064 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 21:37:23,399 basehttp 3554 6172504064 "GET / HTTP/1.1" 200 37815
+WARNING 2025-09-16 21:37:23,547 log 3554 6172504064 Not Found: /calendar/data/
+WARNING 2025-09-16 21:37:23,547 basehttp 3554 6172504064 "GET /calendar/data/ HTTP/1.1" 404 3893
+ERROR 2025-09-16 21:37:43,738 log 3554 6172504064 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 463, in dashboard
+    data = json.loads(request.body)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/http/request.py", line 327, in body
+    raise RawPostDataException(
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+ERROR 2025-09-16 21:37:43,742 basehttp 3554 6172504064 "POST / HTTP/1.1" 500 76703
+ERROR 2025-09-16 21:37:47,220 log 3554 6172504064 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 463, in dashboard
+    data = json.loads(request.body)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/http/request.py", line 327, in body
+    raise RawPostDataException(
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+ERROR 2025-09-16 21:37:47,221 basehttp 3554 6172504064 "POST / HTTP/1.1" 500 76703
+ERROR 2025-09-16 21:37:47,887 log 3554 6172504064 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 463, in dashboard
+    data = json.loads(request.body)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/http/request.py", line 327, in body
+    raise RawPostDataException(
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+ERROR 2025-09-16 21:37:47,887 basehttp 3554 6172504064 "POST / HTTP/1.1" 500 76703
+ERROR 2025-09-16 21:37:48,254 log 3554 6172504064 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 463, in dashboard
+    data = json.loads(request.body)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/http/request.py", line 327, in body
+    raise RawPostDataException(
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+ERROR 2025-09-16 21:37:48,254 basehttp 3554 6172504064 "POST / HTTP/1.1" 500 76703
+ERROR 2025-09-16 21:37:48,451 log 3554 6172504064 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 463, in dashboard
+    data = json.loads(request.body)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/http/request.py", line 327, in body
+    raise RawPostDataException(
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+ERROR 2025-09-16 21:37:48,452 basehttp 3554 6172504064 "POST / HTTP/1.1" 500 76703
+ERROR 2025-09-16 21:37:49,101 log 3554 6172504064 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 463, in dashboard
+    data = json.loads(request.body)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/http/request.py", line 327, in body
+    raise RawPostDataException(
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+ERROR 2025-09-16 21:37:49,102 basehttp 3554 6172504064 "POST / HTTP/1.1" 500 76703
+WARNING 2025-09-16 21:37:51,787 log 3554 6172504064 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-09-16 21:37:51,788 basehttp 3554 6172504064 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3995
+ERROR 2025-09-16 21:39:09,525 log 3554 6155677696 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 463, in dashboard
+    data = json.loads(request.body)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/http/request.py", line 327, in body
+    raise RawPostDataException(
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+ERROR 2025-09-16 21:39:09,526 basehttp 3554 6155677696 "POST / HTTP/1.1" 500 76281
+INFO 2025-09-16 21:40:49,747 autoreload 3554 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 21:40:50,101 autoreload 3628 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:40:51,607 autoreload 3628 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 21:40:51,810 autoreload 3634 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:40:59,140 autoreload 3634 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 21:40:59,338 autoreload 3638 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:41:04,632 autoreload 3638 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 21:41:04,831 autoreload 3641 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:41:06,401 basehttp 3641 6168899584 "GET / HTTP/1.1" 200 37815
+INFO 2025-09-16 21:41:10,989 basehttp 3641 6168899584 "GET / HTTP/1.1" 200 37815
+WARNING 2025-09-16 21:41:17,517 log 3641 6168899584 Not Found: /calendar/data/
+WARNING 2025-09-16 21:41:17,518 basehttp 3641 6168899584 "GET /calendar/data/ HTTP/1.1" 404 4635
+WARNING 2025-09-16 21:41:17,541 log 3641 6168899584 Not Found: /calendar/data/
+WARNING 2025-09-16 21:41:17,541 basehttp 3641 6168899584 "GET /calendar/data/ HTTP/1.1" 404 4635
+INFO 2025-09-16 21:41:18,366 basehttp 3641 6185725952 "GET / HTTP/1.1" 200 37815
+WARNING 2025-09-16 21:41:18,538 log 3641 6185725952 Not Found: /calendar/data/
+WARNING 2025-09-16 21:41:18,538 basehttp 3641 6185725952 "GET /calendar/data/ HTTP/1.1" 404 4635
+INFO 2025-09-16 21:41:29,553 basehttp 3641 6185725952 "POST / HTTP/1.1" 200 37815
+INFO 2025-09-16 21:41:32,415 basehttp 3641 6185725952 "POST / HTTP/1.1" 200 37815
+INFO 2025-09-16 21:41:32,631 basehttp 3641 6185725952 "POST / HTTP/1.1" 200 37815
+INFO 2025-09-16 21:41:32,814 basehttp 3641 6185725952 "POST / HTTP/1.1" 200 37815
+INFO 2025-09-16 21:41:32,966 basehttp 3641 6185725952 "POST / HTTP/1.1" 200 37815
+INFO 2025-09-16 21:41:33,126 basehttp 3641 6185725952 "POST / HTTP/1.1" 200 37815
+WARNING 2025-09-16 21:41:34,097 log 3641 6185725952 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-09-16 21:41:34,098 basehttp 3641 6185725952 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4737
+INFO 2025-09-16 21:45:16,728 autoreload 3641 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 21:45:17,122 autoreload 3679 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:45:20,638 autoreload 3679 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 21:45:20,860 autoreload 3685 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:45:27,358 autoreload 3685 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 21:45:27,590 autoreload 3690 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:45:53,725 autoreload 3840 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:45:55,054 basehttp 3840 6160805888 "GET / HTTP/1.1" 200 38838
+WARNING 2025-09-16 21:45:55,101 log 3840 6160805888 Not Found: /calendar/data/
+WARNING 2025-09-16 21:45:55,101 basehttp 3840 6160805888 "GET /calendar/data/ HTTP/1.1" 404 4635
+WARNING 2025-09-16 21:46:07,697 log 3840 6160805888 Forbidden (CSRF token from the 'X-Csrftoken' HTTP header has incorrect length.): /api/add-assignment/
+WARNING 2025-09-16 21:46:07,698 basehttp 3840 6160805888 "POST /api/add-assignment/ HTTP/1.1" 403 2564
+WARNING 2025-09-16 21:46:08,546 log 3840 6160805888 Forbidden (CSRF token from the 'X-Csrftoken' HTTP header has incorrect length.): /api/add-assignment/
+WARNING 2025-09-16 21:46:08,546 basehttp 3840 6160805888 "POST /api/add-assignment/ HTTP/1.1" 403 2564
+WARNING 2025-09-16 21:46:08,742 log 3840 6160805888 Forbidden (CSRF token from the 'X-Csrftoken' HTTP header has incorrect length.): /api/add-assignment/
+WARNING 2025-09-16 21:46:08,743 basehttp 3840 6160805888 "POST /api/add-assignment/ HTTP/1.1" 403 2564
+WARNING 2025-09-16 21:46:08,946 log 3840 6160805888 Forbidden (CSRF token from the 'X-Csrftoken' HTTP header has incorrect length.): /api/add-assignment/
+WARNING 2025-09-16 21:46:08,947 basehttp 3840 6160805888 "POST /api/add-assignment/ HTTP/1.1" 403 2564
+WARNING 2025-09-16 21:46:09,111 log 3840 6160805888 Forbidden (CSRF token from the 'X-Csrftoken' HTTP header has incorrect length.): /api/add-assignment/
+WARNING 2025-09-16 21:46:09,111 basehttp 3840 6160805888 "POST /api/add-assignment/ HTTP/1.1" 403 2564
+INFO 2025-09-16 21:48:01,433 basehttp 3840 6160805888 "GET / HTTP/1.1" 200 38838
+WARNING 2025-09-16 21:48:12,774 log 3840 6160805888 Not Found: /calendar/data/
+WARNING 2025-09-16 21:48:12,775 basehttp 3840 6160805888 "GET /calendar/data/ HTTP/1.1" 404 4635
+INFO 2025-09-16 21:48:32,763 autoreload 3840 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 21:48:33,084 autoreload 3868 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:48:34,605 autoreload 3868 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 21:48:34,807 autoreload 3873 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:48:36,431 basehttp 3873 6133510144 "GET / HTTP/1.1" 200 38838
+WARNING 2025-09-16 21:48:36,515 log 3873 6133510144 Not Found: /calendar/data/
+WARNING 2025-09-16 21:48:36,515 basehttp 3873 6133510144 "GET /calendar/data/ HTTP/1.1" 404 4635
+INFO 2025-09-16 21:48:50,354 basehttp 3873 6133510144 "POST /api/add-assignment/ HTTP/1.1" 200 71
+INFO 2025-09-16 21:48:51,399 basehttp 3873 6133510144 "GET / HTTP/1.1" 200 40070
+INFO 2025-09-16 21:48:51,415 basehttp 3873 6133510144 "GET /static/css/dashboard.css HTTP/1.1" 304 0
+WARNING 2025-09-16 21:49:02,143 log 3873 6133510144 Not Found: /calendar/data/
+WARNING 2025-09-16 21:49:02,144 basehttp 3873 6133510144 "GET /calendar/data/ HTTP/1.1" 404 4635
+INFO 2025-09-16 21:49:10,885 basehttp 3873 6150336512 "POST / HTTP/1.1" 200 40070
+INFO 2025-09-16 21:49:11,550 basehttp 3873 6150336512 "POST / HTTP/1.1" 200 40070
+INFO 2025-09-16 21:49:11,751 basehttp 3873 6150336512 "POST / HTTP/1.1" 200 40070
+WARNING 2025-09-16 21:49:12,870 log 3873 6150336512 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-09-16 21:49:12,870 basehttp 3873 6150336512 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4737
+INFO 2025-09-16 21:52:21,953 autoreload 3873 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/urls.py changed, reloading.
+INFO 2025-09-16 21:52:22,289 autoreload 3903 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:53:02,821 autoreload 3903 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 21:53:03,044 autoreload 3909 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:53:50,356 basehttp 3909 6194458624 "GET / HTTP/1.1" 200 36475
+INFO 2025-09-16 21:53:59,142 basehttp 3909 6211284992 "GET / HTTP/1.1" 200 36475
+INFO 2025-09-16 21:53:59,301 basehttp 3909 6211284992 "GET /calendar-data/ HTTP/1.1" 200 449
+INFO 2025-09-16 21:54:00,753 basehttp 3909 6211284992 "GET / HTTP/1.1" 200 36475
+INFO 2025-09-16 21:54:00,841 basehttp 3909 6211284992 "GET /calendar-data/ HTTP/1.1" 200 449
+INFO 2025-09-16 21:54:00,924 basehttp 3909 6211284992 "GET / HTTP/1.1" 200 36475
+INFO 2025-09-16 21:54:00,981 basehttp 3909 6211284992 "GET /calendar-data/ HTTP/1.1" 200 449
+INFO 2025-09-16 21:54:01,107 basehttp 3909 6211284992 "GET / HTTP/1.1" 200 36475
+INFO 2025-09-16 21:54:01,170 basehttp 3909 6211284992 "GET /calendar-data/ HTTP/1.1" 200 449
+INFO 2025-09-16 21:54:01,289 basehttp 3909 6211284992 "GET / HTTP/1.1" 200 36475
+INFO 2025-09-16 21:54:01,347 basehttp 3909 6211284992 "GET /calendar-data/ HTTP/1.1" 200 449
+INFO 2025-09-16 21:54:01,665 basehttp 3909 6194458624 "GET /calendar-data/ HTTP/1.1" 200 449
+WARNING 2025-09-16 21:54:03,281 log 3909 6211284992 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-09-16 21:54:03,281 basehttp 3909 6211284992 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4349
+INFO 2025-09-16 21:54:26,475 basehttp 3909 6211284992 "POST / HTTP/1.1" 302 0
+INFO 2025-09-16 21:54:26,505 basehttp 3909 6211284992 "GET / HTTP/1.1" 200 38647
+WARNING 2025-09-16 21:54:26,527 log 3909 6211284992 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-09-16 21:54:26,527 basehttp 3909 6211284992 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4349
+INFO 2025-09-16 21:54:26,600 basehttp 3909 6211284992 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 21:56:11,315 basehttp 3909 6194458624 "GET / HTTP/1.1" 200 37982
+INFO 2025-09-16 21:56:11,391 basehttp 3909 6194458624 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 21:58:03,470 autoreload 4089 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 21:58:08,246 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 37915
+INFO 2025-09-16 21:58:08,331 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 21:58:16,056 basehttp 4089 6204977152 "GET /agent/chat/ HTTP/1.1" 200 17930
+INFO 2025-09-16 21:58:19,062 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 37915
+INFO 2025-09-16 21:58:19,145 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:03:14,377 basehttp 4089 6221803520 "GET / HTTP/1.1" 200 52180
+INFO 2025-09-16 22:03:25,737 basehttp 4089 6221803520 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:03:36,048 basehttp 4089 6221803520 "GET /agent/chat/ HTTP/1.1" 200 32155
+INFO 2025-09-16 22:03:39,433 basehttp 4089 6221803520 "GET / HTTP/1.1" 200 52180
+INFO 2025-09-16 22:03:39,520 basehttp 4089 6221803520 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:03:43,352 basehttp 4089 6221803520 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:03:44,184 basehttp 4089 6221803520 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:24,285 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:24,298 basehttp 4089 6204977152 "GET /static/css/debug.css HTTP/1.1" 200 2105
+INFO 2025-09-16 22:06:24,396 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:27,842 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:27,940 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:28,014 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:28,080 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:28,152 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:28,225 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:28,399 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:28,461 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:28,545 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:28,605 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:28,696 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:28,756 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:06:29,079 basehttp 4089 6204977152 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:06:29,142 basehttp 4089 6204977152 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:07:08,922 basehttp 4089 6204977152 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:07:08,926 basehttp 4089 6204977152 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 22:07:08,935 basehttp 4089 6204977152 "GET /accounts/login/?next=/ HTTP/1.1" 200 28282
+INFO 2025-09-16 22:07:10,682 basehttp 4089 6204977152 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:07:14,439 basehttp 4089 6204977152 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:07:14,593 basehttp 4089 6204977152 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:07:14,829 basehttp 4089 6204977152 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:07:14,974 basehttp 4089 6204977152 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:07:56,006 basehttp 4089 6204977152 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:07:59,532 basehttp 4089 6204977152 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:08:02,652 basehttp 4089 6204977152 "GET /accounts/login/ HTTP/1.1" 200 28282
+INFO 2025-09-16 22:08:17,528 basehttp 4089 6238629888 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:08:17,535 basehttp 4089 6238629888 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 22:08:17,545 basehttp 4089 6238629888 "GET /accounts/login/?next=/ HTTP/1.1" 200 28282
+INFO 2025-09-16 22:08:17,564 basehttp 4089 6238629888 "GET /static/css/debug.css HTTP/1.1" 304 0
+INFO 2025-09-16 22:08:21,575 basehttp 4089 6238629888 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:08:21,614 basehttp 4089 6238629888 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:08:21,679 basehttp 4089 6238629888 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:09:58,584 autoreload 4348 8564154560 Watching for file changes with StatReloader
+ERROR 2025-09-16 22:10:05,663 log 4348 6199685120 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1161, in dashboard
+    return render(request, "index.html", context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2025-09-16 22:10:05,667 basehttp 4348 6199685120 "GET / HTTP/1.1" 500 178339
+ERROR 2025-09-16 22:10:09,827 log 4348 6199685120 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1161, in dashboard
+    return render(request, "index.html", context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2025-09-16 22:10:09,827 basehttp 4348 6199685120 "GET / HTTP/1.1" 500 178339
+ERROR 2025-09-16 22:10:10,210 log 4348 6199685120 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1161, in dashboard
+    return render(request, "index.html", context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2025-09-16 22:10:10,210 basehttp 4348 6199685120 "GET / HTTP/1.1" 500 178339
+INFO 2025-09-16 22:10:46,577 basehttp 4348 6199685120 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:10:57,276 basehttp 4348 6199685120 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:18:38,481 basehttp 4348 6199685120 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:18:38,487 basehttp 4348 6199685120 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 22:18:38,495 basehttp 4348 6199685120 "GET /accounts/login/?next=/ HTTP/1.1" 200 28282
+INFO 2025-09-16 22:18:40,252 basehttp 4348 6199685120 "GET /signup/ HTTP/1.1" 200 32119
+INFO 2025-09-16 22:18:53,854 basehttp 4348 6199685120 "POST /signup/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:18:53,866 basehttp 4348 6199685120 "GET / HTTP/1.1" 200 48905
+INFO 2025-09-16 22:18:53,904 basehttp 4348 6199685120 "GET /calendar-data/ HTTP/1.1" 200 2
+WARNING 2025-09-16 22:18:53,950 log 4348 6216511488 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 22:18:53,951 log 4348 6233337856 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 22:18:53,952 log 4348 6250164224 Not Found: /favicon.ico
+WARNING 2025-09-16 22:18:53,952 basehttp 4348 6250164224 "GET /favicon.ico HTTP/1.1" 404 4238
+WARNING 2025-09-16 22:18:53,952 basehttp 4348 6233337856 "GET /apple-touch-icon.png HTTP/1.1" 404 4265
+WARNING 2025-09-16 22:18:53,952 basehttp 4348 6216511488 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 4301
+INFO 2025-09-16 22:18:58,135 basehttp 4348 6199685120 "GET /agent/chat/ HTTP/1.1" 200 32298
+INFO 2025-09-16 22:19:17,826 basehttp 4348 6199685120 "POST /agent/chat/api/ HTTP/1.1" 200 128
+INFO 2025-09-16 22:19:39,612 basehttp 4348 6199685120 "POST /agent/chat/api/ HTTP/1.1" 200 197
+INFO 2025-09-16 22:19:54,711 basehttp 4348 6199685120 "POST /agent/chat/api/ HTTP/1.1" 200 97
+INFO 2025-09-16 22:20:08,926 basehttp 4348 6199685120 "POST /agent/chat/api/ HTTP/1.1" 200 166
+INFO 2025-09-16 22:20:20,601 basehttp 4348 6199685120 "POST /agent/chat/api/ HTTP/1.1" 200 86
+INFO 2025-09-16 22:20:25,579 basehttp 4348 6199685120 "GET / HTTP/1.1" 200 48233
+INFO 2025-09-16 22:20:25,622 basehttp 4348 6199685120 "GET /calendar-data/ HTTP/1.1" 200 2
+INFO 2025-09-16 22:20:31,334 basehttp 4348 6199685120 "GET /agent/chat/ HTTP/1.1" 200 32298
+INFO 2025-09-16 22:20:33,431 basehttp 4348 6199685120 "GET / HTTP/1.1" 200 48233
+INFO 2025-09-16 22:20:33,481 basehttp 4348 6199685120 "GET /calendar-data/ HTTP/1.1" 200 2
+INFO 2025-09-16 22:20:34,854 basehttp 4348 6199685120 "GET /agent/chat/ HTTP/1.1" 200 32298
+INFO 2025-09-16 22:20:46,292 basehttp 4348 6199685120 "POST /agent/chat/api/ HTTP/1.1" 200 114
+INFO 2025-09-16 22:20:48,394 basehttp 4348 6199685120 "GET / HTTP/1.1" 200 48233
+INFO 2025-09-16 22:20:48,439 basehttp 4348 6199685120 "GET /calendar-data/ HTTP/1.1" 200 2
+ERROR 2025-09-16 22:20:55,015 log 4348 6199685120 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1155, in dashboard
+    "course_form": course_form,
+UnboundLocalError: local variable 'course_form' referenced before assignment
+ERROR 2025-09-16 22:20:55,016 basehttp 4348 6199685120 "POST / HTTP/1.1" 500 73354
+INFO 2025-09-16 22:22:02,809 basehttp 4348 6199685120 "GET /signup/ HTTP/1.1" 200 42951
+INFO 2025-09-16 22:22:51,142 autoreload 4348 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:22:53,514 autoreload 4463 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:22:56,642 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 48233
+INFO 2025-09-16 22:23:08,080 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 2
+INFO 2025-09-16 22:23:58,431 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 48233
+INFO 2025-09-16 22:23:58,468 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 2
+INFO 2025-09-16 22:24:27,684 basehttp 4463 6132461568 "GET /accounts/logout/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:24:27,691 basehttp 4463 6132461568 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 22:24:27,703 basehttp 4463 6132461568 "GET /accounts/login/?next=/ HTTP/1.1" 200 28282
+INFO 2025-09-16 22:24:32,587 basehttp 4463 6132461568 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:24:32,605 basehttp 4463 6132461568 "GET / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:24:32,668 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:24:43,187 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:24:43,227 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+ERROR 2025-09-16 22:25:12,619 log 4463 6132461568 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1373, in dashboard
+    return render(request, "index.html", context)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2025-09-16 22:25:12,623 basehttp 4463 6132461568 "POST / HTTP/1.1" 500 179784
+INFO 2025-09-16 22:25:23,347 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:25:23,442 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:25:34,748 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 52323
+INFO 2025-09-16 22:25:34,799 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:28:15,318 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 52377
+INFO 2025-09-16 22:28:15,414 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:28:25,091 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 52377
+INFO 2025-09-16 22:28:25,130 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:31:52,186 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 52180
+INFO 2025-09-16 22:31:52,282 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:32:02,654 basehttp 4463 6132461568 "POST / HTTP/1.1" 200 52180
+INFO 2025-09-16 22:32:02,694 basehttp 4463 6132461568 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:33:19,308 autoreload 4463 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:33:19,668 autoreload 4580 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:33:21,170 autoreload 4580 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:33:21,371 autoreload 4584 8564154560 Watching for file changes with StatReloader
+ERROR 2025-09-16 22:33:24,402 log 4584 6197833728 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1640, in dashboard
+    "course_form": course_form,
+UnboundLocalError: local variable 'course_form' referenced before assignment
+ERROR 2025-09-16 22:33:24,404 basehttp 4584 6197833728 "POST / HTTP/1.1" 500 73678
+INFO 2025-09-16 22:34:15,303 autoreload 4584 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:34:15,518 autoreload 4610 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:34:17,867 autoreload 4610 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:34:18,082 autoreload 4613 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:34:20,427 autoreload 4613 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:34:20,657 autoreload 4614 8564154560 Watching for file changes with StatReloader
+ERROR 2025-09-16 22:34:24,655 log 4614 6126088192 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1155, in dashboard
+    "course_form": course_form,
+UnboundLocalError: local variable 'course_form' referenced before assignment
+ERROR 2025-09-16 22:34:24,657 basehttp 4614 6126088192 "POST / HTTP/1.1" 500 73678
+ERROR 2025-09-16 22:34:28,537 log 4614 6126088192 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sauravkumar/Library/Python/3.9/lib/python/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/sauravkumar/academic_planner_project/academic_app/views.py", line 1155, in dashboard
+    "course_form": course_form,
+UnboundLocalError: local variable 'course_form' referenced before assignment
+ERROR 2025-09-16 22:34:28,538 basehttp 4614 6126088192 "POST / HTTP/1.1" 500 73678
+INFO 2025-09-16 22:35:36,269 autoreload 4614 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:35:36,493 autoreload 4627 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:35:39,243 basehttp 4627 6124859392 "POST / HTTP/1.1" 200 52180
+INFO 2025-09-16 22:35:39,336 basehttp 4627 6124859392 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:35:51,540 basehttp 4627 6124859392 "POST / HTTP/1.1" 200 52180
+INFO 2025-09-16 22:35:51,580 basehttp 4627 6124859392 "GET /calendar-data/ HTTP/1.1" 200 668
+WARNING 2025-09-16 22:35:54,147 log 4627 6124859392 Forbidden (CSRF cookie not set.): /
+WARNING 2025-09-16 22:35:54,147 basehttp 4627 6124859392 "POST / HTTP/1.1" 403 2870
+WARNING 2025-09-16 22:36:12,358 log 4627 6124859392 Forbidden (CSRF token from POST incorrect.): /
+WARNING 2025-09-16 22:36:12,359 basehttp 4627 6124859392 "POST / HTTP/1.1" 403 2518
+INFO 2025-09-16 22:36:26,250 basehttp 4627 6124859392 "POST / HTTP/1.1" 200 52180
+INFO 2025-09-16 22:36:26,301 basehttp 4627 6124859392 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:47:58,703 basehttp 4627 6124859392 "GET /agent/chat/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:47:58,723 basehttp 4627 6124859392 "GET /accounts/login/?next=/agent/chat/ HTTP/1.1" 200 28139
+WARNING 2025-09-16 22:47:58,751 log 4627 6158512128 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 22:47:58,751 basehttp 4627 6158512128 "GET /apple-touch-icon.png HTTP/1.1" 404 4265
+WARNING 2025-09-16 22:47:58,754 log 4627 6141685760 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 22:47:58,757 log 4627 6175338496 Not Found: /favicon.ico
+WARNING 2025-09-16 22:47:58,757 basehttp 4627 6141685760 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 4301
+WARNING 2025-09-16 22:47:58,757 basehttp 4627 6175338496 "GET /favicon.ico HTTP/1.1" 404 4238
+INFO 2025-09-16 22:47:58,821 basehttp 4627 6141685760 - Broken pipe from ('127.0.0.1', 55174)
+INFO 2025-09-16 22:47:58,822 basehttp 4627 6158512128 - Broken pipe from ('127.0.0.1', 55175)
+INFO 2025-09-16 22:47:58,823 basehttp 4627 6124859392 - Broken pipe from ('127.0.0.1', 55173)
+INFO 2025-09-16 22:52:43,701 autoreload 4627 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/migrations/0004_auto_20250915_2212.py changed, reloading.
+INFO 2025-09-16 22:52:44,539 autoreload 5370 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:55:05,250 autoreload 5370 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:55:05,637 autoreload 5706 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:55:12,264 autoreload 5706 8564154560 /Users/sauravkumar/academic_planner_project/academic_planner_project/settings.py changed, reloading.
+INFO 2025-09-16 22:55:12,573 autoreload 5718 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:55:49,492 autoreload 5748 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:55:58,266 autoreload 5718 8564154560 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 22:55:58,499 autoreload 5759 8564154560 Watching for file changes with StatReloader
+INFO 2025-09-16 22:56:02,835 basehttp 5759 6197833728 "GET /signup/ HTTP/1.1" 200 42808
+INFO 2025-09-16 22:56:14,329 basehttp 5759 6231486464 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 22:56:14,339 basehttp 5759 6231486464 "GET /accounts/login/?next=/ HTTP/1.1" 200 28139
+INFO 2025-09-16 22:56:21,107 basehttp 5759 6231486464 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:56:21,128 basehttp 5759 6231486464 "GET / HTTP/1.1" 200 52512
+INFO 2025-09-16 22:56:21,197 basehttp 5759 6231486464 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:56:32,690 basehttp 5759 6231486464 "POST / HTTP/1.1" 200 52512
+INFO 2025-09-16 22:56:32,718 basehttp 5759 6231486464 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:58:44,466 autoreload 1456 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 22:58:47,089 basehttp 1456 6134870016 "GET / HTTP/1.1" 302 0
+INFO 2025-09-16 22:58:47,105 basehttp 1456 6134870016 "GET /accounts/login/?next=/ HTTP/1.1" 200 28139
+INFO 2025-09-16 22:58:54,604 basehttp 1456 6134870016 "GET /accounts/login/?next=/ HTTP/1.1" 200 28139
+INFO 2025-09-16 22:58:59,408 basehttp 1456 6134870016 "POST /accounts/login/?next=/ HTTP/1.1" 302 0
+INFO 2025-09-16 22:58:59,431 basehttp 1456 6134870016 "GET / HTTP/1.1" 200 52512
+INFO 2025-09-16 22:58:59,502 basehttp 1456 6134870016 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 22:59:12,366 basehttp 1456 6134870016 "POST / HTTP/1.1" 200 52512
+INFO 2025-09-16 22:59:12,407 basehttp 1456 6134870016 "GET /calendar-data/ HTTP/1.1" 200 668
+INFO 2025-09-16 23:01:31,914 autoreload 1862 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:01:51,232 basehttp 1456 6134870016 "POST / HTTP/1.1" 200 53408
+INFO 2025-09-16 23:02:09,725 basehttp 1456 6134870016 "POST / HTTP/1.1" 200 53408
+INFO 2025-09-16 23:02:20,802 basehttp 1456 6134870016 "POST / HTTP/1.1" 200 53408
+INFO 2025-09-16 23:04:10,882 autoreload 1928 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:04:22,533 autoreload 1939 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:04:25,904 basehttp 1939 6123188224 "POST / HTTP/1.1" 200 52890
+INFO 2025-09-16 23:04:40,553 basehttp 1939 6123188224 "POST / HTTP/1.1" 200 52890
+INFO 2025-09-16 23:05:05,550 basehttp 1939 6123188224 "POST / HTTP/1.1" 200 52890
+INFO 2025-09-16 23:06:26,214 autoreload 1928 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:06:26,506 autoreload 1976 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:06:26,551 autoreload 1939 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:06:26,787 autoreload 1978 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:06:33,097 autoreload 1976 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:06:33,239 autoreload 1978 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:06:33,383 autoreload 1984 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:06:33,481 autoreload 1985 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:07:23,313 autoreload 2003 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:07:31,250 basehttp 1985 6121762816 "POST / HTTP/1.1" 200 56356
+INFO 2025-09-16 23:07:43,910 basehttp 1985 6121762816 "POST / HTTP/1.1" 200 56356
+INFO 2025-09-16 23:07:52,347 basehttp 1985 6121762816 "POST / HTTP/1.1" 200 56356
+INFO 2025-09-16 23:08:45,881 autoreload 2003 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:46,177 autoreload 2031 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:46,341 autoreload 1984 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:46,342 autoreload 1985 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:46,630 autoreload 2033 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:46,630 autoreload 2032 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:52,774 autoreload 2031 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:53,003 autoreload 2039 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:53,137 autoreload 2033 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:53,140 autoreload 2032 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:53,413 autoreload 2041 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:53,414 autoreload 2040 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:57,459 autoreload 2039 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:57,758 autoreload 2045 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:57,851 autoreload 2040 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:57,854 autoreload 2041 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:08:58,143 autoreload 2046 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:58,143 autoreload 2047 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:03,252 autoreload 2045 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:03,494 autoreload 2051 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:03,603 autoreload 2047 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:03,605 autoreload 2046 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:03,885 autoreload 2053 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:03,885 autoreload 2052 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:07,288 autoreload 2053 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:07,289 autoreload 2052 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:07,599 autoreload 2058 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:07,599 autoreload 2057 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:07,957 autoreload 2051 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:08,169 autoreload 2059 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:13,617 autoreload 2059 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:13,861 autoreload 2065 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:14,134 autoreload 2058 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:14,135 autoreload 2057 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:14,392 autoreload 2067 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:14,392 autoreload 2066 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:25,463 autoreload 2065 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:25,691 autoreload 2072 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:25,971 autoreload 2066 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:25,972 autoreload 2067 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:09:26,269 autoreload 2075 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:26,275 autoreload 2076 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:44,814 autoreload 2097 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:09:48,244 basehttp 2097 6201651200 "POST / HTTP/1.1" 200 57323
+INFO 2025-09-16 23:10:01,410 basehttp 2097 6201651200 "POST / HTTP/1.1" 200 80
+INFO 2025-09-16 23:10:23,317 basehttp 2097 6201651200 "POST / HTTP/1.1" 200 80
+INFO 2025-09-16 23:11:34,195 autoreload 2076 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:11:34,429 autoreload 2134 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:11:34,558 autoreload 2072 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:11:34,780 autoreload 2135 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:11:40,206 autoreload 2135 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:11:40,436 autoreload 2137 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:11:40,908 autoreload 2134 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:11:41,131 autoreload 2138 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:11:49,970 autoreload 2137 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:11:50,177 autoreload 2139 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:11:50,654 autoreload 2138 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:11:50,925 autoreload 2140 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:12:07,482 autoreload 2151 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:12:12,582 basehttp 2151 6128545792 "POST / HTTP/1.1" 200 57778
+INFO 2025-09-16 23:12:21,994 basehttp 2151 6128545792 "POST / HTTP/1.1" 200 80
+INFO 2025-09-16 23:13:14,590 basehttp 2151 6128545792 "POST / HTTP/1.1" 200 58106
+INFO 2025-09-16 23:13:24,966 basehttp 2151 6128545792 "POST / HTTP/1.1" 200 78
+INFO 2025-09-16 23:13:26,002 basehttp 2151 6128545792 "GET / HTTP/1.1" 200 60458
+INFO 2025-09-16 23:13:58,220 basehttp 2151 6128545792 "POST / HTTP/1.1" 200 68
+INFO 2025-09-16 23:13:59,256 basehttp 2151 6128545792 "GET / HTTP/1.1" 200 62123
+INFO 2025-09-16 23:14:27,051 basehttp 2151 6128545792 "POST / HTTP/1.1" 200 61468
+INFO 2025-09-16 23:16:16,865 autoreload 2140 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:16,868 autoreload 2139 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:16,871 autoreload 2151 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:17,255 autoreload 2231 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:17,255 autoreload 2229 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:17,256 autoreload 2230 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:25,904 autoreload 2230 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:25,907 autoreload 2231 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:25,912 autoreload 2229 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:26,233 autoreload 2241 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:26,233 autoreload 2240 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:26,236 autoreload 2239 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:42,024 autoreload 2239 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:42,027 autoreload 2241 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:42,030 autoreload 2240 8538431680 /Users/sauravkumar/academic_planner_project/academic_app/views.py changed, reloading.
+INFO 2025-09-16 23:16:42,381 autoreload 2249 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:42,381 autoreload 2248 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:42,381 autoreload 2250 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:16:56,444 basehttp 2249 6204813312 "POST / HTTP/1.1" 200 65642
+INFO 2025-09-16 23:17:16,910 basehttp 2249 6204813312 "POST / HTTP/1.1" 200 65
+INFO 2025-09-16 23:17:17,939 basehttp 2249 6204813312 "GET / HTTP/1.1" 200 66576
+INFO 2025-09-16 23:17:38,662 basehttp 2249 6204813312 "POST / HTTP/1.1" 200 71
+INFO 2025-09-16 23:17:39,707 basehttp 2249 6204813312 "GET / HTTP/1.1" 200 67127
+INFO 2025-09-16 23:17:55,374 basehttp 2249 6204813312 "POST / HTTP/1.1" 200 71
+INFO 2025-09-16 23:17:56,419 basehttp 2249 6204813312 "GET / HTTP/1.1" 200 67939
+INFO 2025-09-16 23:18:04,877 basehttp 2249 6204813312 "GET / HTTP/1.1" 200 67281
+INFO 2025-09-16 23:18:09,152 basehttp 2249 6204813312 "GET /agent/chat/ HTTP/1.1" 200 32155
+INFO 2025-09-16 23:18:25,331 basehttp 2249 6204813312 "POST /agent/chat/api/ HTTP/1.1" 200 694
+INFO 2025-09-16 23:19:08,998 basehttp 2249 6204813312 "POST /agent/chat/api/ HTTP/1.1" 200 139
+INFO 2025-09-16 23:19:25,998 basehttp 2249 6204813312 "POST /agent/chat/api/ HTTP/1.1" 200 807
+INFO 2025-09-16 23:20:01,547 basehttp 2249 6204813312 "GET /agent/chat/ HTTP/1.1" 200 32155
+INFO 2025-09-16 23:20:03,772 basehttp 2249 6204813312 "GET / HTTP/1.1" 200 67794
+WARNING 2025-09-16 23:20:03,840 log 2249 6261600256 Not Found: /favicon.ico
+WARNING 2025-09-16 23:20:03,841 log 2249 6227947520 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-09-16 23:20:03,841 log 2249 6244773888 Not Found: /apple-touch-icon.png
+WARNING 2025-09-16 23:20:03,841 basehttp 2249 6261600256 "GET /favicon.ico HTTP/1.1" 404 4238
+WARNING 2025-09-16 23:20:03,842 basehttp 2249 6227947520 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 4301
+WARNING 2025-09-16 23:20:03,842 basehttp 2249 6244773888 "GET /apple-touch-icon.png HTTP/1.1" 404 4265
+INFO 2025-09-16 23:25:12,757 autoreload 2701 8538431680 Watching for file changes with StatReloader
+INFO 2025-09-16 23:25:17,366 basehttp 2701 6132297728 "GET / HTTP/1.1" 200 67794
+INFO 2025-09-16 23:25:26,778 basehttp 2701 6132297728 "GET /agent/chat/ HTTP/1.1" 200 32155
+INFO 2025-09-16 23:27:59,317 basehttp 2701 6132297728 "POST /agent/chat/api/ HTTP/1.1" 200 312

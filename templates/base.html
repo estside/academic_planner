@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}Academic Planner{% endblock %}</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            :root {
+                --primary-color: #6366f1;
+                --primary-dark: #4f46e5;
+                --secondary-color: #f1f5f9;
+                --accent-color: #06b6d4;
+                --success-color: #10b981;
+                --warning-color: #f59e0b;
+                --danger-color: #ef4444;
+                --dark-color: #1e293b;
+                --light-color: #f8fafc;
+                --border-color: #e2e8f0;
+                --text-primary: #0f172a;
+                --text-secondary: #64748b;
+                --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+                --shadow-md:
+                    0 4px 6px -1px rgb(0 0 0 / 0.1),
+                    0 2px 4px -2px rgb(0 0 0 / 0.1);
+                --shadow-lg:
+                    0 10px 15px -3px rgb(0 0 0 / 0.1),
+                    0 4px 6px -4px rgb(0 0 0 / 0.1);
+                --shadow-xl:
+                    0 20px 25px -5px rgb(0 0 0 / 0.1),
+                    0 8px 10px -6px rgb(0 0 0 / 0.1);
+            }
+
+            * {
+                font-family:
+                    "Inter",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    sans-serif;
+            }
+
+            body {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                color: var(--text-primary);
+            }
+
+            .main-content {
+                padding-top: 80px;
+                min-height: 100vh;
+            }
+
+            /* Navigation */
+            .navbar {
+                background: rgba(255, 255, 255, 0.95) !important;
+                backdrop-filter: blur(10px);
+                border-bottom: 1px solid var(--border-color);
+                transition: all 0.3s ease;
+            }
+
+            .navbar-brand {
+                font-weight: 700;
+                font-size: 1.5rem;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-color),
+                    var(--accent-color)
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .nav-link {
+                font-weight: 500;
+                color: var(--text-secondary) !important;
+                transition: all 0.3s ease;
+                position: relative;
+            }
+
+            .nav-link:hover {
+                color: var(--primary-color) !important;
+                transform: translateY(-1px);
+            }
+
+            .nav-link::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: -5px;
+                left: 50%;
+                background: var(--primary-color);
+                transition: all 0.3s ease;
+                transform: translateX(-50%);
+            }
+
+            .nav-link:hover::after {
+                width: 100%;
+            }
+
+            /* Cards */
+            .card {
+                border: none;
+                border-radius: 16px;
+                box-shadow: var(--shadow-lg);
+                transition: all 0.3s ease;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-xl);
+            }
+
+            .card-header {
+                background: transparent;
+                border-bottom: 1px solid var(--border-color);
+                font-weight: 600;
+                color: var(--text-primary);
+            }
+
+            /* Buttons */
+            .btn {
+                border-radius: 12px;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                border: none;
+            }
+
+            .btn-primary {
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-color),
+                    var(--primary-dark)
+                );
+                box-shadow: var(--shadow-md);
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .btn-success {
+                background: linear-gradient(
+                    135deg,
+                    var(--success-color),
+                    #059669
+                );
+            }
+
+            .btn-warning {
+                background: linear-gradient(
+                    135deg,
+                    var(--warning-color),
+                    #d97706
+                );
+            }
+
+            .btn-danger {
+                background: linear-gradient(
+                    135deg,
+                    var(--danger-color),
+                    #dc2626
+                );
+            }
+
+            /* Forms */
+            .form-control,
+            .form-select {
+                border-radius: 12px;
+                border: 2px solid var(--border-color);
+                transition: all 0.3s ease;
+                background: rgba(255, 255, 255, 0.9);
+            }
+
+            .form-control:focus,
+            .form-select:focus {
+                border-color: var(--primary-color);
+                box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+                background: white;
+            }
+
+            /* Alerts */
+            .alert {
+                border-radius: 12px;
+                border: none;
+                font-weight: 500;
+            }
+
+            .alert-success {
+                background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+                color: #065f46;
+            }
+
+            .alert-danger {
+                background: linear-gradient(135deg, #fee2e2, #fecaca);
+                color: #991b1b;
+            }
+
+            .alert-warning {
+                background: linear-gradient(135deg, #fef3c7, #fde68a);
+                color: #92400e;
+            }
+
+            .alert-info {
+                background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+                color: #1e40af;
+            }
+
+            /* Animations */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .fade-in-up {
+                animation: fadeInUp 0.6s ease-out;
+            }
+
+            .fade-in-up-delay-1 {
+                animation: fadeInUp 0.6s ease-out 0.1s both;
+            }
+
+            .fade-in-up-delay-2 {
+                animation: fadeInUp 0.6s ease-out 0.2s both;
+            }
+
+            .fade-in-up-delay-3 {
+                animation: fadeInUp 0.6s ease-out 0.3s both;
+            }
+
+            /* Priority badges */
+            .priority-low {
+                background: linear-gradient(135deg, #10b981, #059669);
+            }
+            .priority-medium {
+                background: linear-gradient(135deg, #f59e0b, #d97706);
+            }
+            .priority-high {
+                background: linear-gradient(135deg, #f97316, #ea580c);
+            }
+            .priority-urgent {
+                background: linear-gradient(135deg, #ef4444, #dc2626);
+            }
+
+            /* Status indicators */
+            .status-completed {
+                background: linear-gradient(
+                    135deg,
+                    var(--success-color),
+                    #059669
+                );
+            }
+
+            .status-overdue {
+                background: linear-gradient(
+                    135deg,
+                    var(--danger-color),
+                    #dc2626
+                );
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .main-content {
+                    padding-top: 70px;
+                }
+
+                .card {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            /* Loading spinner */
+            .spinner-border-sm {
+                width: 1rem;
+                height: 1rem;
+            }
+
+            /* Custom scrollbar */
+            ::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: var(--secondary-color);
+                border-radius: 4px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: var(--primary-color);
+                border-radius: 4px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: var(--primary-dark);
+            }
+        </style>
+
+        {% block extra_head %}{% endblock %}
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand" href="{% url 'dashboard' %}">
+                    <i class="fas fa-graduation-cap me-2"></i>Academic Planner
+                </a>
+
+                <button
+                    class="navbar-toggler border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'dashboard' %}">
+                                <i class="fas fa-tachometer-alt me-1"></i
+                                >Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'chat_view' %}">
+                                <i class="fas fa-robot me-1"></i>AI Planner
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                            >
+                                <i class="fas fa-user me-1"></i>{{
+                                user.username|title }}
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'logout' %}"
+                                    >
+                                        <i class="fas fa-sign-out-alt me-2"></i
+                                        >Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}">
+                                <i class="fas fa-sign-in-alt me-1"></i>Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'signup' %}">
+                                <i class="fas fa-user-plus me-1"></i>Sign Up
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            {% if messages %}
+            <div class="container-fluid px-4">
+                {% for message in messages %}
+                <div
+                    class="alert alert-{{ message.tags }} alert-dismissible fade show fade-in-up"
+                    role="alert"
+                >
+                    <i
+                        class="fas fa-{% if message.tags == 'success' %}check-circle{% elif message.tags == 'error' %}exclamation-circle{% elif message.tags == 'warning' %}exclamation-triangle{% else %}info-circle{% endif %} me-2"
+                    ></i>
+                    {{ message }}
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                    ></button>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %} {% block content %}{% endblock %}
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            // Add loading states to forms
+            document.addEventListener("DOMContentLoaded", function () {
+                // Add loading states to buttons
+                const forms = document.querySelectorAll("form");
+                forms.forEach((form) => {
+                    form.addEventListener("submit", function () {
+                        const submitBtn = form.querySelector(
+                            'button[type="submit"]',
+                        );
+                        if (submitBtn) {
+                            const originalText = submitBtn.innerHTML;
+                            submitBtn.innerHTML =
+                                '<span class="spinner-border spinner-border-sm me-2"></span>Processing...';
+                            submitBtn.disabled = true;
+
+                            // Re-enable after 5 seconds as fallback
+                            setTimeout(() => {
+                                submitBtn.innerHTML = originalText;
+                                submitBtn.disabled = false;
+                            }, 5000);
+                        }
+                    });
+                });
+
+                // Auto-dismiss alerts after 5 seconds
+                const alerts = document.querySelectorAll(
+                    ".alert:not(.alert-permanent)",
+                );
+                alerts.forEach((alert) => {
+                    setTimeout(() => {
+                        const bsAlert = new bootstrap.Alert(alert);
+                        bsAlert.close();
+                    }, 5000);
+                });
+
+                // Add smooth scrolling
+                document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                    anchor.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(
+                            this.getAttribute("href"),
+                        );
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            });
+                        }
+                    });
+                });
+            });
+
+            // Utility functions
+            function showToast(message, type = "info") {
+                // Create custom toast element
+                const toast = document.createElement("div");
+                toast.className = `custom-toast ${type}`;
+                toast.innerHTML = `
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div>${message}</div>
+                    <button type="button" onclick="this.parentElement.parentElement.remove()" style="background: none; border: none; font-size: 18px; cursor: pointer;">&times;</button>
+                </div>
+            `;
+
+                // Add to toast container
+                let container = document.querySelector(".toast-container");
+                if (!container) {
+                    container = document.createElement("div");
+                    container.className = "toast-container";
+                    document.body.appendChild(container);
+                }
+
+                container.appendChild(toast);
+
+                // Auto-remove after 5 seconds
+                setTimeout(() => {
+                    if (toast.parentElement) {
+                        toast.remove();
+                    }
+                }, 5000);
+            }
+
+            // Form validation helper
+            function validateForm(form, requiredFields) {
+                let isValid = true;
+                const errors = [];
+
+                requiredFields.forEach((fieldName) => {
+                    const field = form.querySelector(`[name="${fieldName}"]`);
+                    if (!field || !field.value.trim()) {
+                        isValid = false;
+                        errors.push(
+                            `${fieldName.replace(/^.*-/, "").replace("_", " ")} is required`,
+                        );
+                        if (field) {
+                            field.classList.add("form-error");
+                        }
+                    } else if (field) {
+                        field.classList.remove("form-error");
+                        field.classList.add("form-success");
+                    }
+                });
+
+                if (!isValid) {
+                    showToast(errors.join(", "), "error");
+                }
+
+                return isValid;
+            }
+
+            // Form loading state
+            function setFormLoading(form, isLoading = true) {
+                const submitBtn = form.querySelector('button[type="submit"]');
+                if (submitBtn) {
+                    if (isLoading) {
+                        submitBtn.classList.add("btn-loading");
+                        submitBtn.disabled = true;
+                    } else {
+                        submitBtn.classList.remove("btn-loading");
+                        submitBtn.disabled = false;
+                    }
+                }
+                form.style.opacity = isLoading ? "0.7" : "1";
+            }
+
+            // Debug function
+            function debugLog(message, data = null) {
+                // Only log to console, remove visual debug display
+                console.log(`[Academic Planner Debug] ${message}`, data);
+            }
+        </script>
+
+        {% block extra_js %}{% endblock %}
+    </body>
+</html>

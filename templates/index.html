@@ -1,0 +1,1230 @@
+{% extends "base.html" %} {% load static %} {% block title %}Dashboard | Academic Planner{% endblock %} {% block extra_head %}
+    <style>
+    .dashboard-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .dashboard-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, #fff, #e2e8f0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.5rem;
+    }
+
+    .dashboard-header p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+
+    .stats-card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 16px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: var(--shadow-lg);
+        transition: all 0.3s ease;
+    }
+
+    .stats-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-xl);
+    }
+
+    .stats-number {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .stats-label {
+        color: var(--text-secondary);
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+    }
+
+    .section-card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 16px;
+        box-shadow: var(--shadow-lg);
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .section-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-xl);
+    }
+
+    .section-header {
+        background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--accent-color)
+        );
+        color: white;
+        padding: 1rem 1.5rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .section-content {
+        padding: 1.5rem;
+    }
+
+    .item-list {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .list-item {
+        padding: 1rem;
+        border-bottom: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+    }
+
+    .list-item:last-child {
+        border-bottom: none;
+    }
+
+    .list-item:hover {
+        background: rgba(99, 102, 241, 0.05);
+    }
+
+    .item-title {
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+
+    .item-meta {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.25rem;
+    }
+
+    .item-course {
+        font-size: 0.75rem;
+        color: var(--primary-color);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .priority-badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: white;
+    }
+
+    .form-section {
+        background: rgba(248, 250, 252, 0.8);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .form-section h6 {
+        color: var(--text-primary);
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-row .form-group {
+        margin-bottom: 0;
+    }
+
+    .btn-add {
+        background: linear-gradient(135deg, var(--success-color), #059669);
+        border: none;
+        border-radius: 12px;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .btn-add:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 2rem;
+        color: var(--text-secondary);
+    }
+
+    .empty-state i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        opacity: 0.5;
+    }
+
+    .calendar-container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 16px;
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+    }
+
+    .calendar-header {
+        background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--accent-color)
+        );
+        color: white;
+        padding: 1rem 1.5rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #calendar {
+        padding: 1.5rem;
+        height: 600px;
+    }
+
+    .simple-calendar {
+        height: 100%;
+    }
+
+    .calendar-month {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--border-color);
+    }
+
+    .calendar-month h4 {
+        color: var(--primary-color);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .calendar-events {
+        max-height: 450px;
+        overflow-y: auto;
+    }
+
+    .calendar-event-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 12px;
+        border-left: 4px solid var(--primary-color);
+        transition: all 0.3s ease;
+    }
+
+    .calendar-event-item:hover {
+        transform: translateX(4px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .event-date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 60px;
+        margin-right: 1rem;
+        background: var(--primary-color);
+        color: white;
+        border-radius: 8px;
+        padding: 0.5rem;
+    }
+
+    .event-date .day {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .event-date .month {
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .event-details {
+        flex-grow: 1;
+    }
+
+    .event-title {
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+
+    .event-time {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.25rem;
+    }
+
+    .event-location {
+        font-size: 0.8rem;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+    .no-events {
+        text-align: center;
+        padding: 3rem 1rem;
+        color: var(--text-secondary);
+    }
+
+    .no-events i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        opacity: 0.5;
+    }
+
+    .no-events p {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+
+    .overdue-item {
+        border-left: 4px solid var(--danger-color) !important;
+        background: rgba(239, 68, 68, 0.05) !important;
+    }
+
+    .completed-item {
+        opacity: 0.6;
+        text-decoration: line-through;
+    }
+
+    .completed-item .item-title {
+        color: var(--success-color) !important;
+    }
+
+    @media (max-width: 768px) {
+        .dashboard-header h1 {
+            font-size: 2rem;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+        }
+
+        #calendar {
+            height: 400px;
+        }
+    }
+    </style>
+{% endblock %} {% block content %}
+<div class="container-fluid px-4">
+    <div class="dashboard-header fade-in-up">
+        <h1><i class="fas fa-graduation-cap me-3"></i>Academic Dashboard</h1>
+        <p>
+            Welcome back, {{ user.first_name|default:user.username }}! Here's
+            your academic overview.
+        </p>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-6 col-md-3">
+            <div class="stats-card">
+                <div class="stats-number text-primary">{{ courses.count }}</div>
+                <div class="stats-label">Courses</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="stats-card">
+                <div class="stats-number text-warning">
+                    {{ upcoming_assignments.count }}
+                </div>
+                <div class="stats-label">Upcoming</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="stats-card">
+                <div class="stats-number text-danger">
+                    {{ overdue_assignments.count }}
+                </div>
+                <div class="stats-label">Overdue</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="stats-card">
+                <div class="stats-number text-info">
+                    {{ upcoming_exams.count }}
+                </div>
+                <div class="stats-label">Exams</div>
+            </div>
+            </div>
+        </div>
+        
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="section-card fade-in-up">
+                <div class="section-header">
+                    <i class="fas fa-tasks"></i>
+                    Upcoming Assignments
+                </div>
+                <div class="section-content">
+                    <div class="item-list">
+                        {% for assignment in upcoming_assignments|slice:":5" %}
+                        <div
+                            class="list-item {% if assignment.completed %}completed-item{% endif %}"
+                        >
+                            <div
+                                class="d-flex justify-content-between align-items-start"
+                            >
+                                <div class="flex-grow-1">
+                                    <div class="item-title">
+                                        {{ assignment.title }}
+                                    </div>
+                                    <div class="item-meta">
+                                        <i class="fas fa-clock me-1"></i>
+                                        Due {{ assignment.due_date|date:"M d, Y" }}
+                                    </div>
+                                    <div class="item-course">
+                                        {{ assignment.course.name }} - {{ assignment.course.code }}
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <span
+                                        class="priority-badge priority-{{ assignment.priority }}"
+                                    >
+                                        {{ assignment.priority }}
+                                    </span>
+                                    <button
+                                        class="btn btn-sm btn-outline-success"
+                                        onclick="toggleAssignment({{ assignment.id }})"
+                                    >
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    {% empty %}
+                        <div class="empty-state">
+                            <i class="fas fa-clipboard-check"></i>
+                            <p>No upcoming assignments. Great job!</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-section">
+                        <h6>
+                            <i class="fas fa-plus-circle"></i> Add New
+                            Assignment
+                        </h6>
+                        <form method="post" id="assignment-form">
+                            {% csrf_token %}
+                            <input type="hidden" name="form_type" value="assignment" />
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ assignment_form.course.id_for_label }}"
+                                        >Course:</label
+                                    >
+                                    {{ assignment_form.course }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ assignment_form.title.id_for_label }}"
+                                        >Title:</label
+                                    >
+                                    {{ assignment_form.title }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ assignment_form.due_date.id_for_label }}"
+                                        >Due Date:</label
+                                    >
+                                    {{ assignment_form.due_date }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ assignment_form.priority.id_for_label }}"
+                                        >Priority:</label
+                                    >
+                                    {{ assignment_form.priority }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ assignment_form.estimated_hours.id_for_label }}"
+                                        >Estimated Hours:</label
+                                    >
+                                    {{ assignment_form.estimated_hours }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ assignment_form.description.id_for_label }}"
+                                        >Description:</label
+                                    >
+                                    {{ assignment_form.description }}
+                                </div>
+                            </div>
+                            {% if assignment_form.errors %}
+                            <div class="alert alert-danger">
+                                <strong>Please correct the following errors:</strong>
+                                <ul>
+                                    {% for field, errors in assignment_form.errors.items %}
+                                        {% for error in errors %}
+                                            <li>{{ field }}: {{ error }}</li>
+                                        {% endfor %}
+                    {% endfor %}
+                </ul>
+                            </div>
+                            {% endif %}
+                            <button
+                                class="btn btn-add"
+                                type="submit"
+                                name="assignment-submit"
+                            >
+                                <i class="fas fa-plus me-2"></i>Add Assignment
+                            </button>
+                </form>
+                    </div>
+                </div>
+            </div>
+
+            {% if overdue_assignments %}
+            <div class="section-card mb-4 fade-in-up-delay-2">
+                <div
+                    class="section-header"
+                    style="
+                        background: linear-gradient(
+                            135deg,
+                            var(--danger-color),
+                            #dc2626
+                        );
+                    "
+                >
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Overdue Assignments
+                </div>
+                <div class="section-content">
+                    <div class="item-list">
+                        {% for assignment in overdue_assignments|slice:":5" %}
+                        <div class="list-item overdue-item">
+                            <div class="item-title">{{ assignment.title }}</div>
+                            <div class="item-meta">
+                                <i class="fas fa-clock me-1"></i>
+                                Due {{ assignment.due_date|date:"M d, Y" }}
+                            </div>
+                            <div class="item-course">
+                                {{ assignment.course.name }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="section-card fade-in-up-delay-1">
+                <div class="section-header">
+                    <i class="fas fa-file-alt"></i>
+                    Upcoming Exams
+                </div>
+                <div class="section-content">
+                    <div class="item-list">
+                        {% for exam in upcoming_exams %}
+                        <div class="list-item">
+                            <div class="item-title">{{ exam.title }}</div>
+                            <div class="item-meta">
+                                <i class="fas fa-calendar me-1"></i>
+                                {{ exam.exam_date|date:"M d, Y \a\t H:i" }}
+                            </div>
+                            <div class="item-course">
+                                {{ exam.course.name }}
+                            </div>
+                        </div>
+                    {% empty %}
+                        <div class="empty-state">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>No upcoming exams.</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+
+                    <div class="form-section">
+                        <h6><i class="fas fa-plus-circle"></i> Add Exam</h6>
+                        <form method="post" id="exam-form">
+                            {% csrf_token %}
+                            <input type="hidden" name="form_type" value="exam" />
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ exam_form.course.id_for_label }}"
+                                        >Course:</label
+                                    >
+                                    {{ exam_form.course }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ exam_form.title.id_for_label }}"
+                                        >Title:</label
+                                    >
+                                    {{ exam_form.title }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ exam_form.exam_date.id_for_label }}"
+                                        >Exam Date:</label
+                                    >
+                                    {{ exam_form.exam_date }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ exam_form.exam_type.id_for_label }}"
+                                        >Type:</label
+                                    >
+                                    {{ exam_form.exam_type }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ exam_form.duration.id_for_label }}"
+                                        >Duration (minutes):</label
+                                    >
+                                    {{ exam_form.duration }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ exam_form.location.id_for_label }}"
+                                        >Location:</label
+                                    >
+                                    {{ exam_form.location }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="{{ exam_form.notes.id_for_label }}"
+                                    >Notes:</label
+                                >
+                                {{ exam_form.notes }}
+                            </div>
+                            <button
+                                class="btn btn-add"
+                                type="submit"
+                                name="exam-submit"
+                            >
+                                <i class="fas fa-plus me-2"></i>Add Exam
+                            </button>
+                </form>
+                    </div>
+            </div>
+        </div>
+
+            <div class="section-card mt-4 fade-in-up-delay-2">
+                <div class="section-header">
+                    <i class="fas fa-book"></i>
+                    My Courses
+                </div>
+                <div class="section-content">
+                    <div class="item-list">
+                        {% for course in courses %}
+                        <div class="list-item">
+                            <div class="item-title">{{ course.name }}</div>
+                            <div class="item-meta">
+                                {{ course.code }} - {{ course.instructor }}
+                            </div>
+                            <div class="item-course">
+                                {{ course.credits }} Credits
+                            </div>
+                        </div>
+                    {% empty %}
+                        <div class="empty-state">
+                            <i class="fas fa-plus-circle"></i>
+                            <p>No courses added yet.</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-section">
+                        <h6><i class="fas fa-plus-circle"></i> Add Course</h6>
+                        <form method="post" id="course-form">
+                            {% csrf_token %}
+                            <input type="hidden" name="form_type" value="course" />
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ course_form.name.id_for_label }}"
+                                        >Name:</label
+                                    >
+                                    {{ course_form.name }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ course_form.code.id_for_label }}"
+                                        >Code:</label
+                                    >
+                                    {{ course_form.code }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ course_form.instructor.id_for_label }}"
+                                        >Instructor:</label
+                                    >
+                                    {{ course_form.instructor }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ course_form.credits.id_for_label }}"
+                                        >Credits:</label
+                                    >
+                                    {{ course_form.credits }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label
+                                    for="{{ course_form.color.id_for_label }}"
+                                    >Color:</label
+                                >
+                                {{ course_form.color }}
+                            </div>
+                            {% if course_form.errors %}
+                            <div class="alert alert-danger">
+                                <strong>Please correct the following errors:</strong>
+                                <ul>
+                                    {% for field, errors in course_form.errors.items %}
+                                        {% for error in errors %}
+                                            <li>{{ field }}: {{ error }}</li>
+                                        {% endfor %}
+                    {% endfor %}
+                </ul>
+                            </div>
+                            {% endif %}
+                            <button
+                                class="btn btn-add"
+                                type="submit"
+                                name="course-submit"
+                            >
+                                <i class="fas fa-plus me-2"></i>Add Course
+                            </button>
+                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="calendar-container fade-in-up-delay-3">
+                <div class="calendar-header">
+                    <i class="fas fa-calendar"></i>
+                    Upcoming Events
+                </div>
+                <div id="calendar">
+                    <div class="simple-calendar">
+                        <div class="calendar-month">
+                            <h4>{{ "now"|date:"F Y" }}</h4>
+                        </div>
+                        <div class="calendar-events">
+                            {% for event in upcoming_events|slice:":10" %}
+                            <div class="calendar-event-item">
+                                <div class="event-date">
+                                    <span class="day">{{ event.event_date|date:"d" }}</span>
+                                    <span class="month">{{ event.event_date|date:"M" }}</span>
+                                </div>
+                                <div class="event-details">
+                                    <div class="event-title">{{ event.title }}</div>
+                                    <div class="event-time">{{ event.event_date|date:"H:i" }}</div>
+                                    {% if event.location %}
+                                    <div class="event-location">{{ event.location }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% empty %}
+                            <div class="no-events">
+                                <i class="fas fa-calendar-plus"></i>
+                                <p>No upcoming events</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card mt-4 fade-in-up-delay-3">
+                <div class="section-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    Upcoming Events
+                </div>
+                <div class="section-content">
+                    <div class="item-list">
+                        {% for event in upcoming_events %}
+                        <div class="list-item">
+                            <div class="item-title">{{ event.title }}</div>
+                            <div class="item-meta">
+                                <i class="fas fa-clock me-1"></i>
+                                {{ event.event_date|date:"M d, Y \a\t H:i" }}
+                            </div>
+                            {% if event.location %}
+                            <div class="item-course">{{ event.location }}</div>
+                            {% endif %}
+                        </div>
+                    {% empty %}
+                        <div class="empty-state">
+                            <i class="fas fa-calendar-plus"></i>
+                            <p>No upcoming events.</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+
+                    <div class="form-section">
+                        <h6><i class="fas fa-plus-circle"></i> Add Event</h6>
+                        <form method="post" id="event-form">
+                            {% csrf_token %}
+                            <input type="hidden" name="form_type" value="event" />
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ event_form.title.id_for_label }}"
+                                        >Title:</label
+                                    >
+                                    {{ event_form.title }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ event_form.event_type.id_for_label }}"
+                                        >Type:</label
+                                    >
+                                    {{ event_form.event_type }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ event_form.event_date.id_for_label }}"
+                                        >Start Date:</label
+                                    >
+                                    {{ event_form.event_date }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ event_form.end_date.id_for_label }}"
+                                        >End Date:</label
+                                    >
+                                    {{ event_form.end_date }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label
+                                        for="{{ event_form.location.id_for_label }}"
+                                        >Location:</label
+                                    >
+                                    {{ event_form.location }}
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="{{ event_form.color.id_for_label }}"
+                                        >Color:</label
+                                    >
+                                    {{ event_form.color }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label
+                                    for="{{ event_form.description.id_for_label }}"
+                                    >Description:</label
+                                >
+                                {{ event_form.description }}
+                            </div>
+                            <button
+                                class="btn btn-add"
+                                type="submit"
+                                name="event-submit"
+                            >
+                                <i class="fas fa-plus me-2"></i>Add Event
+                            </button>
+                </form>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} {% block extra_js %}
+<script>
+    // This script will handle the `toggleAssignment` call
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.startsWith(name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    function showToast(message, type = "info") {
+        const toast = document.createElement("div");
+        toast.className = `toast toast-${type}`;
+        toast.innerHTML = `
+            <div class="toast-content">
+                <i class="fas fa-${getToastIcon(type)}"></i>
+                <span>${message}</span>
+            </div>
+        `;
+        toast.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            background: ${getToastColor(type)};
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 10000;
+            animation: slideInRight 0.3s ease;
+            max-width: 400px;
+            word-wrap: break-word;
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => {
+            toast.style.animation = "slideOutRight 0.3s ease";
+            setTimeout(() => {
+                if (toast.parentNode) toast.parentNode.removeChild(toast);
+            }, 300);
+        }, 4000);
+    }
+
+    function getToastIcon(type) {
+        const icons = { success: "check-circle", error: "exclamation-circle", warning: "exclamation-triangle", info: "info-circle" };
+        return icons[type] || "info-circle";
+    }
+
+    function getToastColor(type) {
+        const colors = { success: "#28a745", error: "#dc3545", warning: "#ffc107", info: "#17a2b8" };
+        return colors[type] || "#17a2b8";
+    }
+
+    function toggleAssignment(assignmentId) {
+        fetch(`/assignment/${assignmentId}/toggle/`, {
+            method: "POST",
+            headers: {
+                "X-CSRFToken": getCookie('csrftoken'),
+                "Content-Type": "application/json",
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showToast(data.message, "success");
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                showToast("Error updating assignment", "error");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            showToast("Error updating assignment", "error");
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Simple calendar is already rendered with Django templates
+        console.log("Simple calendar loaded successfully");
+        
+        // Handle form submissions without page reload
+        setupFormHandlers();
+    });
+
+    function setupFormHandlers() {
+        // Assignment form handler
+        const assignmentForm = document.getElementById('assignment-form');
+        if (assignmentForm) {
+            assignmentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                handleAssignmentSubmission(this);
+            });
+        }
+
+        // Course form handler
+        const courseForm = document.getElementById('course-form');
+        if (courseForm) {
+            courseForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                handleCourseSubmission(this);
+            });
+        }
+
+        // Exam form handler
+        const examForm = document.getElementById('exam-form');
+        if (examForm) {
+            examForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                handleExamSubmission(this);
+            });
+        }
+
+        // Event form handler
+        const eventForm = document.getElementById('event-form');
+        if (eventForm) {
+            eventForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                handleEventSubmission(this);
+            });
+        }
+    }
+
+    function handleAssignmentSubmission(form) {
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        
+        // Add the button name to form data (this is needed for Django to detect which form was submitted)
+        formData.append('assignment-submit', '');
+        
+        // Debug: Log form data
+        console.log('Submitting assignment form...');
+        for (let [key, value] of formData.entries()) {
+            console.log(key, value);
+        }
+        
+        // Show loading state
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Adding Assignment...';
+        submitButton.disabled = true;
+
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            }
+        })
+        .then(response => {
+            console.log('Response received:', response);
+            console.log('Response status:', response.status);
+            console.log('Response headers:', response.headers);
+            
+            // Check if response is JSON
+            const contentType = response.headers.get('content-type');
+            console.log('Content-Type:', contentType);
+            
+            if (contentType && contentType.includes('application/json')) {
+                return response.json();
+            } else {
+                // If not JSON, let's see what we got
+                return response.text().then(text => {
+                    console.log('Non-JSON response:', text);
+                    throw new Error('Server returned non-JSON response');
+                });
+            }
+        })
+        .then(data => {
+            console.log('Parsed response data:', data);
+            if (data.success) {
+                showToast(data.message, 'success');
+                form.reset();
+                // Reload the page to show updated data
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                showToast(data.message || 'Error adding assignment. Please try again.', 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Error adding assignment. Please try again.', 'error');
+        })
+        .finally(() => {
+            // Reset button state
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+        });
+    }
+
+    function handleCourseSubmission(form) {
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        
+        // Add the button name to form data (this is needed for Django to detect which form was submitted)
+        formData.append('course-submit', '');
+        
+        // Show loading state
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Adding Course...';
+        submitButton.disabled = true;
+
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            }
+        })
+        .then(response => {
+            // Check if response is JSON
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                return response.json();
+            } else {
+                // If not JSON, it might be an error page
+                throw new Error('Server returned non-JSON response');
+            }
+        })
+        .then(data => {
+            if (data.success) {
+                showToast(data.message, 'success');
+                form.reset();
+                // Reload the page to show updated data
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                showToast(data.message || 'Error adding course. Please try again.', 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Error adding course. Please try again.', 'error');
+        })
+        .finally(() => {
+            // Reset button state
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+        });
+    }
+
+    function handleExamSubmission(form) {
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        
+        // Add the button name to form data
+        formData.append('exam-submit', '');
+        
+        // Show loading state
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Adding Exam...';
+        submitButton.disabled = true;
+
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            }
+        })
+        .then(response => {
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                return response.json();
+            } else {
+                return response.text().then(text => {
+                    console.log('Non-JSON response:', text);
+                    throw new Error('Server returned non-JSON response');
+                });
+            }
+        })
+        .then(data => {
+            if (data.success) {
+                showToast(data.message, 'success');
+                form.reset();
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                showToast(data.message || 'Error adding exam. Please try again.', 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Error adding exam. Please try again.', 'error');
+        })
+        .finally(() => {
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+        });
+    }
+
+    function handleEventSubmission(form) {
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        
+        // Add the button name to form data
+        formData.append('event-submit', '');
+        
+        // Show loading state
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Adding Event...';
+        submitButton.disabled = true;
+
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            }
+        })
+        .then(response => {
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                return response.json();
+            } else {
+                return response.text().then(text => {
+                    console.log('Non-JSON response:', text);
+                    throw new Error('Server returned non-JSON response');
+                });
+            }
+        })
+        .then(data => {
+            if (data.success) {
+                showToast(data.message, 'success');
+                form.reset();
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                showToast(data.message || 'Error adding event. Please try again.', 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Error adding event. Please try again.', 'error');
+        })
+        .finally(() => {
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+        });
+    }
+    </script>
+{% endblock %}

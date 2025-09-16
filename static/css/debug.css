@@ -1,0 +1,116 @@
+/* Debug CSS for Academic Planner */
+.debug-info {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 9999;
+}
+
+.form-error {
+    border: 2px solid red !important;
+    background-color: #ffe6e6 !important;
+}
+
+.form-success {
+    border: 2px solid green !important;
+    background-color: #e6ffe6 !important;
+}
+
+/* Enhanced form styling */
+.form-control:invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control:valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Loading state for forms */
+.form-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+.btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: btn-loading-spinner 1s ease infinite;
+}
+
+@keyframes btn-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Calendar fallback styles */
+.calendar-fallback {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.calendar-error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Toast notifications */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.custom-toast {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    min-width: 300px;
+    border-left: 4px solid;
+}
+
+.custom-toast.success {
+    border-left-color: #28a745;
+}
+
+.custom-toast.error {
+    border-left-color: #dc3545;
+}
+
+.custom-toast.warning {
+    border-left-color: #ffc107;
+}
+
+.custom-toast.info {
+    border-left-color: #17a2b8;
+}
