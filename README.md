@@ -5,6 +5,14 @@ A **professional-grade** academic planner web application built with Django, fea
 ![Academic Planner](https://img.shields.io/badge/Django-4.2-green) ![Python](https://img.shields.io/badge/Python-3.9+-blue) ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple) ![AI](https://img.shields.io/badge/AI-Gemini-orange)
 
 ---
+## 👋 About the Creator
+
+Hey there, I'm **Saurav Kumar** (Roll No. **B23051**) from the **Bioengineering branch at IIT Mandi**.  
+This project is my take on how technology can simplify the daily grind of a college student.
+
+🔗 Check out my portfolio here: [saurav-portfolio-mandi.vercel.app](https://saurav-portfolio-mandi.vercel.app)
+
+---
 
 ## 🖼️ Screenshots
 
