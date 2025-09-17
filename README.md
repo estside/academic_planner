@@ -13,27 +13,21 @@ This project is my take on how technology can simplify the daily grind of a coll
 🔗 Check out my portfolio here: [saurav-portfolio-mandi.vercel.app](https://saurav-portfolio-mandi.vercel.app)
 
 ---
+## 💡 Why I Built This: Eliminating the Manual Grind
 
-## 🖼️ Screenshots
+As a student, I know firsthand how much time we spend on repetitive, manual tasks.  
+We juggle multiple courses, assignments, and exams, all while trying to keep track of deadlines, attendance, and study schedules. It's a lot to manage, and it often leads to missed deadlines and unnecessary stress.
 
-### Dashboard
+This is where the Academic Planner comes in. I built this AI agent to **automate and streamline those tasks**, giving us back our most valuable resource: **time**.
 
+- 📝 **No more scribbled notes:** Use a single, organized system to track everything.  
+- ⚡ **Less data entry, more learning:** Just say *“Add a midterm exam for MATH301 on December 15th at 2 PM”* and it’s done.  
+- 📌 **A proactive partner:** Prioritize with visual indicators & get real-time reminders.  
 
-![Dashboard Screenshot](./screenshots/dashboard.png)
-### AI Chat Assistant
+By handling the tedious parts of academic life, this tool lets you focus on what really matters: **studying, learning, and excelling**.  
+It’s a prime example of an AI agent that can **reason, plan, and execute** to solve a real-world problem.
 
-![Chat Screenshot](./screenshots/chat.png)
-
-### Login Page
-
-![Login Screenshot](./screenshots/login.png)
-
-### Signup Page
-
-![Signup Screenshot](./screenshots/signup.png)
-
-
-
+---
 ---
 
 ## ✨ **What's New in This Version**
@@ -118,6 +112,29 @@ This project is my take on how technology can simplify the daily grind of a coll
 * **Real-time updates** from database
 
 ---
+
+
+## 🖼️ Screenshots
+
+### Dashboard
+
+
+![Dashboard Screenshot](./screenshots/dashboard.png)
+### AI Chat Assistant
+
+![Chat Screenshot](./screenshots/chat.png)
+
+### Login Page
+
+![Login Screenshot](./screenshots/login.png)
+
+### Signup Page
+
+![Signup Screenshot](./screenshots/signup.png)
+
+
+
+
 
 ## 🛠️ **Technology Stack**
 
